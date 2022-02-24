@@ -1,0 +1,125 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}    
+Body {
+    background-color: rgb(255, 255, 255);
+    font-weight: 400!important;
+    line-height: 1.15;
+}
+
+/* ============ Still Background Images ============ */
+.still-background-1 {
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
+    border:1px solid black;
+    font-size:20px;
+}
+
+.h-30em {
+    height: 30em;
+}
+
+.h-50em {
+    height: 50em;
+}
+
+/* ============ COLLAPSE NAVBAR ============ */
+.navbar, .navbar li {
+    transition: 0.3s ease-in-out;
+    z-index: 5;
+}
+
+@media screen and (max-width: 1000px){
+    .navbar {
+        background-color:rgba(16,52,78,0.4)!important;
+        backdrop-filter: blur(10px)!important;
+    }
+
+    .navbar li:hover {
+        background-color:rgba(16, 52, 78, 0.6)!important;
+        border-radius: 20px;
+        padding-left: 1em;
+        padding-right: 1em;
+    }
+
+    
+}
+
+/* ============ CAPTIONS IN THE WORD ============ */
+.mt-10 {
+    margin-top: 10em;
+}
+
+.mt-8 {
+    margin-top: 8em;
+}
+
+.mt-6 {
+    margin-top: 6em;
+}
+
+.font-small {
+    font-size: 1.6em;
+}
+
+.font-big {
+    font-size: 3em;
+}
+
+.pl-10 {
+    padding-left: 10em;
+}
+
+.pl-15 {
+    padding-left: 15em;
+}
+
+/* ============ CAPTIONS IN THE WORD ============ */
+.pl-20{
+    padding-left: 20em;
+}
+
+.img-rounded {
+    border-radius: 10px;
+}
+
+.bg-lightgrey {
+    background-color: rgba(246,246,246,1)!important;
+}
+
+.box-shadow-paleblue {
+    box-shadow: 20px 20px rgba(0, 115, 255, 0.5);
+}
+
+.box-shadow-paleblue-50 {
+    box-shadow: 5px 5px rgba(0, 115, 255, 0.5);
+}
+
+.box-shadow-palered {
+    box-shadow: 20px 20px rgba(255, 109, 109, 0.5);
+}
+
+.box-shadow-info {
+    box-shadow: 20px 20px rgba(23,162,184,0.2);
+}
+
+.max-width-50 {
+    max-width: 50em;
+}
+
+/* ============ FOOTER ============ */
+footer p:hover {
+    opacity: 0.5;
+}
+
+/* ============ VIDEOS ============ */
+video {
+    object-fit: fill;
+}
+
+video { 
+    -webkit-transform: scaleX(2); 
+    -moz-transform: scaleX(2);
+}
