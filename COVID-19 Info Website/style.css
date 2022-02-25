@@ -1,0 +1,41 @@
+
+/* Wrapper */
+.wrapper {
+    position: relative;
+    min-height: 100vh;
+}
+
+@media (min-width: 768px) {
+    .wrapper {
+        display: flex;
+    }
+}
+
+/* image cover */
+
+
+/* Card Info */
+.banner {
+    background-image: url("https://cdn.newsbook.com.mt/wp-content/uploads/2020/04/16222352/2020-04-16T142607Z_1_LYNXNPEG3F1K2_RTROPTP_4_HEALTH-CORONAVIRUS-WHO-ROLE-scaled.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%; 
+}
+
+/* Sidebar */
+.sidebar-nav > a {
+    padding-top: 0.5rem/* 8px */;
+    padding-bottom: 0.5rem/* 8px */;
+    display:block;
+    padding-left: 1rem/* 16px */;
+    padding-right: 1rem/* 16px */;
+    transition: 0.2s;
+    border-radius: 4px;
+}
+
+.sidebar-nav > a:hover {
+    background-color: rgba(41, 218, 109, 0.981);
+    color: white;
+    transition: 0.2s;
+}
+

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta Charset -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <!-- CDN JQuery 3.6.0 -->
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.6.0.js"></script>
+
+    <!-- CDN Tailwind  -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Link to Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Link to Javascript -->
+    <script src="main.js"></script>
+    
+    <title>COVID19 - HOME</title>
+</head>
+
+<!-- BODY -->
+<body>
+    <!-- Body-Wrapper -->
+    <div class="wrapper">
+
+        <!-- Mobile Menu Bar -->
+        <div class="bg-green-800 text-gray-100 flex justify-between md:hidden">
+            <!-- Logo -->
+            <a href="COVID-19 Info - Index.html" class="block p-4 text-white font-bold">Better Dev</a>
+            <!-- Mobile Menu Button -->
+            <button class="mobile-menu-button p-4 focus:outline-none focus:bg-green-700">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+            </button>
+        </div>
+
+        <!-- Sidebar -->
+        <div class="sidebar bg-green-800 text-green-100 w-64 space-y-6 py-7 px-2 | absolute inset-y-0 left-0 transform -translate-x-full md:relative md:translate-x-0 transition duration-200 ease-in-out">
+            <!-- Logo -->
+            <a href="COVID-19 Info - Index.html" class="text-white flex items-center space-x-2 px-4">
+                <svg class="w-8 h-8" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z" />
+                </svg>
+                <span class="text-2xl font-extrabold">COVID-19</span>
+            </a>
+
+            <!-- Nav -->
+            <nav class="sidebar-nav">
+                <a href="" class="">Home</a>
+                <a href="" class="">About</a>
+                <a href="" class="">Live Statistics</a>
+                <a href="" class="">Contact Us</a>
+            </nav>
+        </div>
+
+        <!-- Content -->
+        <div class="flex-1 p-10">
+            <!-- Padding Banner -->
+            <div class="grid grid-cols-1 space-y-5 mb-10">
+                <div class="w-full p-10 bg-blue-500 rounded banner">
+                    <div class="text-white bg-[rgba(191,219,254,0.7)] rounded px-2 py-1">
+                        <a href="">Learn more in the World Health Organization Website (WHO)</a>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Info -->
+            <p class="font-bold">What is "COVID-19"?</p>
+            <hr class="border-emerald-800 pb-5">
+            <div class="mb-10">
+                It is a disease that is caused by a virus called Severe Acute Respiratory Syndrome Coronavirus 2 (SARS-CoV-2). It is like SARS and its common symptoms are fever, cough, and shortness of breath.
+            </div>
+
+            <p class="font-bold">Where did COVID-19 originated?</p>
+            <hr class="border-emerald-800 pb-5">
+            <div class="mb-10">
+                The virus originated in Wuhan, China. It was highly contagious, spreading throughout regions of China, the United States, and Europe by early 2020, having been carried by travelers from affected regions.
+            </div>
+
+            <p class="font-bold">Who made the "COVID-19" disease a "pandemic"?</p>
+            <hr class="border-emerald-800 pb-5">
+            <div class="mb-10">
+                There were travelers who came from the virus’s origin that went back home to their other countries such as United States and Europe, which the virus to spread to other countries.
+            </div>
+
+            <p class="font-bold">How does the COVID-19 disease spread?</p>
+            <hr class="border-emerald-800 pb-5">
+            <div class="mb-10">
+                <p>
+                    The virus can spread through droplets in the air which are created by COVID-19 infected individuals when they cough or sneeze.
+                </p>
+                <br>
+                <p>
+                    The main symptoms of coronavirus (COVID-19) are:
+                </p>
+                <ol class="list-decimal list-inside">
+                    <li><b>High Temperature</b> – this means you feel hot to touch on your chest or back (you do not need to measure your temperature).</li> 
+                    <li><b>A New, Continuous Cough</b> – this means coughing a lot for more than an hour, or 3 or more coughing episodes in 24 hours (if you usually have a cough, it may be worse than usual).</li>
+                    <li><b>A Loss or Change</b> To Your Sense of Smell or Taste – this means you've noticed you cannot smell or taste anything, or things smell or taste different to normal.</li>
+                  </ol>
+                </p>
+            </div>
+        </div>
+    </div>
+    <!-- FOOTER -->
+    <div class="w-full h-32 px-10 bg-green-900">
+        <p class="py-5 text-2xl text-white">Made by Michael Jacob M. Delos Santos</p>
+        <hr class="border-white">
+    </div>
+</body>
+</html>
