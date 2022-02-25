@@ -1,0 +1,749 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!-- BOOTSTRAP 5 -->
+    <!-- (Bootstrap CSS) -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+
+    <!-- My Custom CSS -->
+    <link rel="stylesheet" href="../myStyle.css">
+    <link rel="stylesheet" href="../Rainbow text animation css/text-rainbow.css">
+
+    <!-- (Bootstrap 5 poppers)  -->
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>
+    
+    
+    <!-- GoogleApis Fonts Newsreader & Font Awesome -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Newsreader&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <!-- JQUERY -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- custom Jquery libraries -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <title>BLOG Site - Michael's Essay </title>
+</head>
+<style>
+  
+</style>
+
+<script>
+  $(document).ready(function(){
+
+
+
+
+
+
+    // METHODS
+
+
+    // Side Card Navigation 
+    $(".btn").eq(0).click(function(){
+      $(".controllable-container").eq(0).show("fast");
+      $(".controllable-container").eq(1).hide("fast");
+      $(".controllable-container").eq(2).hide("fast");
+      $(".controllable-container").eq(3).hide("fast");
+      $(".controllable-container").eq(4).hide("fast");
+    });
+
+    $(".btn").eq(1).click(function(){
+      $(".controllable-container").eq(0).hide("fast");
+      $(".controllable-container").eq(1).show("fast");
+      $(".controllable-container").eq(2).hide("fast");
+      $(".controllable-container").eq(3).hide("fast");
+      $(".controllable-container").eq(4).hide("fast");
+    });
+
+    $(".btn").eq(2).click(function(){
+      $(".controllable-container").eq(0).hide("fast");
+      $(".controllable-container").eq(1).hide("fast");
+      $(".controllable-container").eq(2).show("fast");
+      $(".controllable-container").eq(3).hide("fast");
+      $(".controllable-container").eq(4).hide("fast");
+    });
+
+    $(".btn").eq(3).click(function(){
+      $(".controllable-container").eq(0).hide("fast");
+      $(".controllable-container").eq(1).hide("fast");
+      $(".controllable-container").eq(2).hide("fast");
+      $(".controllable-container").eq(3).show("fast");
+      $(".controllable-container").eq(4).hide("fast");
+    });
+
+    $(".btn").eq(4).click(function(){
+      $(".controllable-container").eq(0).hide("fast");
+      $(".controllable-container").eq(1).hide("fast");
+      $(".controllable-container").eq(2).hide("fast");
+      $(".controllable-container").eq(3).hide("fast");
+      $(".controllable-container").eq(4).show("fast");
+    });
+
+    $(".btn").eq(5).click(function(){
+      $(".controllable-container").eq(0).show("fast");
+      $(".controllable-container").eq(1).show("fast");
+      $(".controllable-container").eq(2).show("fast");
+      $(".controllable-container").eq(3).show("fast");
+      $(".controllable-container").eq(4).show("fast");
+    });
+
+
+
+
+
+
+  });
+</script>
+<body>
+    <!-- NAVIGATION BAR -->
+    <div class="container-fluid p-0 main main-container">
+        <nav class="navbar navbar-expand-xl navbar-light bg-light">
+            <div class="container-fluid text-center">
+              <a class="navbar-brand" href="../BLOG Site.html">MJ & Jayme's <br> Blog Website</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarBasic" aria-controls="navbarBasic" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarBasic">
+                <ul class="navbar-nav me-auto mb-2 mb-xl-0">
+                  <li class="nav-item">
+                    <a class="nav-link " aria-current="page" href="../BLOG Site.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link " href="../BLOG Site - About Us.html">About Us</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" href="../BLOG Site - Our Essays.html" tabindex="-1" aria-disabled="true">Our Essays</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+        </nav>
+    </div>
+
+    <!-- CONTAINS ALL ESSAYS -->
+    <div class="container-fluid">
+        
+      <!-- NAVIGATION SIDECARD -->
+      <div class="row row-cols-sm-2 my-5">
+            <div class="col-md-4">
+              <div class="card">
+                <div class="card-header bg-white"> Table of Contents </div>
+                <div class="card-body">
+                  <h4 class="card-title">Michael's Essay</h4>
+                  <ul>
+                      <li><a class="btn btn-primary my-2"> The Remnants of the Solar System </a></li>
+                      <li><a class="btn btn-primary my-2"> Getting to Know Jayme </a></li>
+                      <li><a class="btn btn-primary my-2"> Becoming a CIITeen: What Track or Strand to Pursue </a></li>
+                      <li><a class="btn btn-primary my-2"> 5 Types of Online Students </a></li>
+                      <li><a class="btn btn-primary my-2"> Recipe: How to make my Mom's Recipe of Adobo </a></li>
+                      <li><a class="btn btn-light my-5"> Show all </a></li>
+                  </ul>
+                </div>
+
+                <!-- All Buttons -->
+                <p>
+                  <span class="badge bg-primary rounded-pill">Descriptive Essay</span>
+                  <span class="badge bg-secondary rounded-pill">Narrative Essay</span>
+                  <span class="badge bg-warning rounded-pill">Comparison & Contrast Essay</span>
+                  <span class="badge bg-success rounded-pill">Classification Essay</span>
+                  <span class="badge bg-info rounded-pill">The Process Text</span>
+                  <span class="badge bg-lightgrey rounded-pill"><i class="text-rainbow">MJ's Favourites</i></span>
+                </p>
+              </div>
+
+                
+
+              <!-- Other Links -->
+              <br>
+              <div class="card">
+                  <div class="card-header bg-dark text-white"> Other Links </div>
+                  <div class="card-body">
+                      <li><a href="Michael's Essays.html" class="btn btn-dark my-2"> Go to Michael Jacob M. Delos Santos' Essay Works ></a></li>
+                      <li><a href="Jayme's Essays.html" class="btn btn-dark my-2"> Go to Jayme Lenon's Essay Works ></a></li>
+                  </div>
+              </div>
+          </div>
+
+          <div id="Scroll-1" class="col-md-8">
+
+            <!-- 1st ESSAY ENTRY -->
+            <div class="container controllable-container">
+              <div>
+                <h2 class="display-4">Remnants of the Solar System</h2>
+                <span class="badge bg-primary rounded-pill">Descriptive Essay</span>
+                <hr>
+                <div class="card card-body">
+                  <p class="card-subtitle text-muted mb-2">
+                    Written by Michael Jacob M. Delos Santos | March 20,2021 - 11:21PM 
+                  </p>
+                </div>
+                <hr>
+                
+                <p class="text-justify lead">
+                  In  a  vast  mysterious  cold,  far,and  dark  place,  exploration  has  begun.   When  the  Solar  System  formed, much  of  the  gas,  dust,and  rocks  pulled  together  to  form  the  sun  and  planets.  The  planets  then  swept  most  of  the remaining debris into the sun or out of the solar system. Some of these objectsare within the gravitational influence of the Sun while still avoiding thegravity of the large planets like Jupiter. The Kuiper Belt and its compatriot, the most distant and spherical Oort Cloud, contain the leftover remnants from the beginning of the Solar System and can provide  valuable  insights about  the  Solar  System’s birth  and  beyond.We  can  now see  that  the  Solar System  is bigger than we thought.
+                </p>
+
+                <p class="text-justify lead">
+                  The  Kuiper  Belt  is  a  cold  region  in  space  filled  with  remnants  of  icy  rocks  from  the  Solar  System. Scientists were  wondering  whether  the  Solar  System  ends  in  Neptune  until a Dutch  astronomer, Gerard  Kuiper, publish  a paper  in1951 about  the  objects  beyond  Pluto,where  it  serves  as  the  reservoirs  of  the  comets  that  kept flying by towards our Solar System. The Dutch astronomer inspired the discovery and exploration of these objectssuch that it is generally attributed to him, whichis nowknown as the “Kuiper Belt”.  The KuiperBelt is asource of comets, as it is very slowly erodingitselfaway.  The first of these strange bodies which astronomers call Kuiper Belt Objects  (KBOs),  came  to  light  in  1992,  discovered  by  Dave  Jewitt  and  Jane  Luu,  a  pair  of  scientists  who  didn't believe the outer solar system was empty.
+                </p>
+
+                <p class="text-justify lead">
+                  There  are  more  than  2,000  Kuiper  Belt  objects  or  KBO  that  have  been  cataloged  by  observers,  but  they represent only a tiny fractionof the total number of objects, scientists think there are still more. Pluto was the first Kuiper Belt Object discovered in 1930.  The astronomers at that time had reason to expect a large population beyond Neptune.  Although  at  that  time,  scientists  never  thought  about  having  an  outer  system  beyond  Pluto. Remarkably, the first spacecraft to enter the Kuiper Belt was NASA's Spacecraft Pioneer 10, when it crossedbeyond Neptune's orbit in 1983,but that spacecraft didn't visit any of the icy worldsin the region. However, the first spacecraft to visit an object in the Kuiper Belt was NASA's New Horizons, which flew by Pluto and its moons in July 2015.
+                </p>
+
+                <p class="text-justify lead">
+                  The  Oort  Cloud  is a  cloud  of  comets  and  other  objects;and the  most  distant  region  of  our Solar  System. Even the nearest objects in the Oort Cloud are thought to be many times farther from the sun than the outer reaches of the Kuiper Belt. Astronomers believe it is way beyond the orbits of Pluto and the Kuiper belt. Itis believed to be the  source  of  long-period  comets  in  the  Solar  System.   The  Oort  Cloud  might  contain  billions  or  even  trillions  of objects.
+                </p>
+
+                <p class="text-justify lead">
+                  The Remnants of the Solar System, described as Kuiper Belt and Oort Cloud showsthat the Solar System is bigger than what we know. This is based around the furthest objectthat takes the orbit around the sun, based on the Sun's gravitational pull.  Everything that gets affected by the Sun's gravity is part of the Solar System.This edge of the  Solar  System  is  well  past  Pluto  and  even  beyond  the  Kuiper  Belt.  Though  we  believe  there  are  thousands  of these  small  objects  beyond  the  Solar  System,  we  haven't  found  a  big  fraction  of  them yet because  they  are  so  far away. The smaller objects can lead us to a much bigger planet. The more we discover, the better we will understand and see what's beyond our Solar System.
+                </p>
+
+                <p>Resources</p>
+                <ul class="font-small">
+                  <li>
+                      LexicoDictionaries | English. (n.d). Meaning of Kuiper Belt. Retrieved from: <a href="https://www.lexico.com/definition/kuiper_beltNASA">https://www.lexico.com/definition/kuiper_beltNASA</a> 
+                  </li> 
+                  <li>
+                      Science. (2019, Dec. 19). Kuiper Belt. NASA Science Solar System Exploration. Retrieved from: <a href="https://solarsystem.nasa.gov/solar-system/kuiper-belt/in-depth/">https://solarsystem.nasa.gov/solar-system/kuiper-belt/in-depth/</a>
+                  </li>
+                  <li>    
+                      Williams, M. (2015, June 16). What is the Kuiper Belt? Universe Today, Space and Astronomy News. Retrieved from: <a  href="https://www.universetoday.com/107598/what-is-the-kuiper-belt">https://www.universetoday.com/107598/what-is-the-kuiper-belt</a>
+                  </li>
+                  <li>    
+                      NASA Science. (2017, Nov 30). Kuiper Belt: In-Depth. NASA Science Solar System Exploration. Retrieved from: <a href="https://solarsystem.nasa.gov/resources/399/kuiper-belt-in-depth/">https://solarsystem.nasa.gov/resources/399/kuiper-belt-in-depth/</a>
+                  </li>
+                  <li>    
+                      Vallieres, Raymond Jr. (2016). Oort Cloud –3D[JPG]. Flickr. <a href="https://flic.kr/p/N4cvy4NASA">https://flic.kr/p/N4cvy4NASA</a>
+                  </li> 
+                  <li>    
+                      Science. (2019, June 6). Oort Cloud. NASA Science Solar System Exploration. Retrieved from: <a href="https://solarsystem.nasa.gov/solar-system/oort-cloud/overview/"> https://solarsystem.nasa.gov/solar-system/oort-cloud/overview/</a>
+                  </li>
+                  <li>    
+                      The Swinburne University of Technology. (n.d). COSMOS –The SAO Encyclopedia of Astronomy. COSMOS.  Retrieved from:  <a href="https://astronomy.swin.edu.au/cosmos/L/Long-period+Comets">https://astronomy.swin.edu.au/cosmos/L/Long-period+Comets</a>
+                  <li>    
+                      NASA Science. (2021, Feb. 17).  Beyond our Solar System –Overview. Nasa Science Solar System Exploration. Retrieved from: <a href="https://solarsystem.nasa.gov/solar-system/beyond/overview/">https://solarsystem.nasa.gov/solar-system/beyond/overview/</a>
+                  </li>
+                  <li>    
+                      NASA Science. (2019. Dec. 19). Beyond Our Solar System –In-Depth. NASA Science Solar System Exploration. Retrieved from:  <a href="https://solarsystem.nasa.gov/solar-system/beyond/in-depth/">https://solarsystem.nasa.gov/solar-system/beyond/in-depth/</a>
+                  </li>
+                  <li>    
+                      National Geographic. (n.d). Milky Way Galaxy. National Geographic Kids. Retrieved from:  <a href="https://kids.nationalgeographic.com/space/article/milky-way">https://kids.nationalgeographic.com/space/article/milky-way</a>
+                  </li>
+                  <li>    
+                      Matthewson, S. (2015, June 27). Where, in relation to the entire universe, is the Milky Way located? (Intermediate). [Blog Post]. Retrieved from: <a href="http://curious.astro.cornell.edu/about-us/93-the-universe/the-milky-way/general-questions/493-where-in-relation-to-the-entire-universe-is-the-milky-way-located-intermediate">https://kids.nationalgeographic.com/space/article/milky-way</a>
+                  </li>
+                  <li>    
+                      Cain, F. (2010, June 1). Who Discovered the Milky Way? [Blog Post]. Retrieved from:  <a href="https://www.universetoday.com/65629/who-discovered-the-milky-way/">https://www.universetoday.com/65629/who-discovered-the-milky-way/</a>
+                  </li>
+                  <li>   
+                      NASA. (2009, Feb. 24). Galileo’s Observations of the Moon, Jupiter, Venus,and the Sun. Nasa Science Solar System Exploration. Retrieved from:  <a href="https://solarsystem.nasa.gov/news/307/galileos-observations-of-the-moon-jupiter-venus-and-the-sun/">https://solarsystem.nasa.gov/news/307/galileos-observations-of-the-moon-jupiter-venus-and-the-sun/</a>
+                  </li>
+                  <li>    
+                      Planets for Kids. (n.d.). Milky Way. Planet for Kids, Free Astronomy Network for Kids. Retrieved from:   <a href="https://www.planetsforkids.org/galaxies/milky-way.html">https://www.planetsforkids.org/galaxies/milky-way.html</a>
+                  </li>
+                  <li>    
+                      NASA Science. (2018, Dec. 14). 10 Things to know about the Kuiper Belt. NASA Science, Solar System Exploration. Retrieved from: <a href="https://solarsystem.nasa.gov/news/792/10-things-to-know-about-the-kuiper-belt/">https://solarsystem.nasa.gov/news/792/10-things-to-know-about-the-kuiper-belt/</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            
+            
+            
+            <!-- 2nd ESSAY ENTRY -->
+            <div class="container my-5 controllable-container">
+              <div>
+                  <h2 class="display-4">Getting to know Jayme</h2>
+                  <span class="badge bg-secondary rounded-pill">Narrative Essay</span>
+                  <hr>
+                  <div class="card card-body">
+                    <p class="card-subtitle text-muted mb-2">
+                      Written by Michael Jacob M. Delos Santos | April 30,2021 - 10:46 PM
+                    </p>
+                  </div>
+                  <hr>
+                  
+                  <p class="text-justify lead">
+                    It’s almost a year now in CIIT SHS and everything is relatively new to me, the online classes, the teachers, and of course,my classmates.I have not really gotten to know much about my classmates personally. Maybe because we don’t see each other face-to-face, it hindered us to establish a personal relationship.It is essential for senior students to start establishingsome significant relation as a class. High school is arguably the best year in a person’s life. It is a period where individuals are growing, learning,and preparing to venture into the reality of the world,which is known as adulthood. There are many stories that tells us that the most loyal friends you can have are from your high school peers. Being a shy person myself, I need to level up my game well, in retrospect to the awkwardness of my usual self,and to see what it feels like to take a leap to know the people in my circle such as my classmates.
+                </p>
+
+                <p class="text-justify lead">
+                    The challenge that I have at present is to face my shyness and gain confidence,because sometimes it affects the people closest to me and my surroundings. My parents said while I was growing up and needed to focus on my studies, I was taught to calm myself and channel my energy properly. I think I’m quite average in my shyness,but I just don’t take the initiative to focus on my social skills. So, given the task to interview my teammate Jayme Ann Lenon, I find this as an opportunity to practice my social skills to know and understand a person.  I met my classmate Jayme this year through my online classes. Everyone in my class isrelatively new to the school because we all came from different junior high schools. My classmate Jayme is basically a quiet and shy person who loves to draw and play video games. She has one older brother and lives with both her parents and grandparents. She said that she likes to draw anime characters because of the influence of her cousin who gave her a book about how to draw anime, and then she read it. When she read the book, she got inspired to draw and tried practicing her drawing skills. I asked her what her other hobbies are and she said she’s also into videogames, because when she was initially finding Wii games, she encountered a bunch of articles about the top 10 Wii games and saw the “Xenoblade Chronicles”. She heard a lot of good things about it and decided to give it a try. From then on, she started looking for more games like it.  This got her hooked up in the world of anime, that’s why she’s also into RPG video games that came from Japan. These games are called JRPG which stands for Japanese Role-play games.This must have been her outlet, because she is the type of person who likes to be by herself most of the time.
+                </p>
+
+                <p class="text-justify lead">
+                    I then asked her what significant moments in her life that changed her for the better. She seemed reluctant in conveying her answer and said that it was during her junior high school, that she was able to express herself better and had a fairground in realityto speak up and gain some friends.I tried to peek a little personal by asking a follow-up question,but I was not able to get anything else other than that.
+                </p>
+
+                <p class="text-justify lead">
+                    I don’t want to think of it as a failure to establish a connection with my teammate, but I guess everybody has a reason to not share their experiences easily and it’s okay. Maybe, she is that shy or not comfortable to talk and share to a mere acquaintance like me.  Maybe if I talk to her more in the future, she might warm up to express her personal experiences with me.
+                </p>
+
+                <p class="text-justify lead">
+                    I have learned that shyness can become a major issue during group works and team collaboration, but once you take the initiative to overcome your shyness and express yourself clearly, the benefits will surprise you.  It might open up newpossibilities in transforming yourself better.  Therefore, it’s better to be confident rather than being shy.While interviewing my teammate, I did not see that much enthusiasm from her, maybe she was uncomfortable in sharing her personal life. I was notable to establish a connection to progress it into meaningful communication.I wish she was willing to open and share some things about her life. I was weighing my options to try and initiate more questions,but I felt it would be best to just respect herprivacy. It would have been more significant though to know her perspective in life,because I can somehow relate to the pressure and awkwardness. It would have been a good opportunity to share and exchange experiences.  To be honest, this interview felt abit short, because I couldn’t get anything from her that could spice this essay.  On the other hand, I realized that every person has their own time to grow so at least I got to know a bit about her.
+                </p>
+
+                <p>Resources</p>
+                <ul class="font-small">
+                    <li>All rights of information in this essay are to Jayme Lenon 2020-2021 ©</li>
+                </ul>
+              </div>
+            </div>
+
+
+
+            <!-- 3rd ESSAY ENTRY -->
+            <div class="container my-5 controllable-container">
+              <div>
+                <h2 class="display-4">Becoming a CIITeen: What Track or Strand to Pursue</h2>
+                <span class="badge bg-warning rounded-pill">Comparison & Contrast Essay</span>
+                <hr>
+                <div class="card card-body">
+                  <p class="card-subtitle text-muted mb-2">
+                    Written by Michael Jacob M. Delos Santos | April 30,2021 - 10:46 PM
+                  </p>
+                </div>
+                <hr>
+
+                <h4>Table of Contents</h4>
+                <ol>
+                  <li>Introduction</li>
+                  <ul>
+                    <li>Hook Sentence</li>
+                    <li>General/Background of the Subject Matter </li>
+                    <li>Foundation/Basis for Comparison & Contrast</li>
+                    <li>Thesis Statement</li>
+                  </ul> 
+                  <li>Media & Visual Arts Strand vs. Animation Strand</li>
+                  <ul>
+                    <li>Subjects (Media & Visual Arts Strand vs. Animation Strand)</li>
+                    <li>College Course Crediting (Media & Visual Arts Strand vs. Animation Strand)</li>
+                    <li>Job Internship (Media & Visual Arts Strand vs. Animation Strand)</li>
+                  </ul>
+                  <li>Programming    Strand    vs.    Animation    Strand</li>
+                  <ul>
+                    <li>Subjects (Programming Strand vs. Animation Strand)</li>
+                    <li>College Course Crediting (Programming Strand vs. Animation Strand)</li>
+                    <li>Job Internship (Programming Strand vs. Animation Strand)</li>
+                  </ul>
+                  <li>Programming    Strand    vs.    Media    &    Visual    Arts    Strand</li>
+                  <ul>
+                    <li>Subjects(Programming Strand vs. Media & Visual Arts Strand)</li>
+                    <li>College Course Crediting (Programming Strand vs. Media & Visual Arts Strand)</li>
+                    <li>Job Internship (Programming Strand vs. Media & Visual Arts Strand)</li>
+                  </ul>
+                  
+                </ol>
+                  
+                <p class="text-justify lead">
+                  The COVID19    Pandemic    remotely    changed    our    lives    most    especiallyfor    us    students.        We    have    to    adapt     and     do     online     classes     because     the     spreading     of     thevirus     is     so     life     threatening.          Everything    and    everyone     have     to     adapt     virtually     nowadays     to     confine     the     viral     pandemic.               Most     of     the     educational    institutions    have    adapted    to    this,because    it’s    the    new    normal    as    they    say.    One    of    the    schoolsthat    found    its    way    to    this    new    norm    is    the    CIIT    SHS/COLLEGE.        Since    the    school    specializes    in    computer    technology,    ithas    found    a    way    to    make    online    education    possibleearlier    on.The    CIIT    offers    a    variety    ofstrands    that    specializes    in    Technology,    these    strands    are    the    Programming    Strand,    the    Animation    Strand,    and    the    Arts    and    Design    Strandor    also    known    as    the    “Media    and    Visual    Arts    Strand”.    According    to    their    website,    CIIT    is    one    of    the    leading    schools    in    Digital    and    Technical    educationin    the    Philippines,    CIIT    Philippines    offers    a    Senior     High     School    program     that     produces     students     who     can     adapt     to     the     changing     demands     of     the    industry,    both    now    and    in    the    future.CIIT    Philippines    developed    an    industry-­‐standard    curriculum    thatimplements    hands-­‐on    learning    in    multimedia,    animation,or    programming    and    provides    the    knowledge    and     skills     students     can     use     even     before     moving     up     to     college.    The     SHS     curriculum     of     CIIT     offers    specialization    subjects    thatcanbe    credited    to    College    if    the    student    chooses    to    continue    their    studies    at    CIIT.Each    strand    will    pursue    different    courses    and    careers,    the    student’s    skillsand    passionwill    identify    which     job     is     great     for     them.    The     Specialized    Subjects     in     each     strand     may     vary     depending     on     the     skills    needed     to    be    trained    except     for     the     Core     and     Applied     Subjects,which    are    important     inevery     strand,because     it     teaches     them    hands     on     experiences     on     how     to    work,     actand     think     in     the     industry.    The    Strandsare     unique     from     each    other,but     all     of     them     are    important     because    they     are     correlated     from    each     other.          Aprogrammercan    work     with     an     animator     and     mediavisual     artist     to     design     or     create     a    project.    Just    like    in    creating    software’sapplications,    it    is    usually    a    collaborative    work    by    a    programmer,    animator     or     avisual    artist.     It     goes     the     same    way,when     animatorsand     artistneeds     some     app     to     help    them    render    their    faster    or    easierand    be    able    to    visualize    their    idea    efficiently.    A    student    can    assess    their     ability     which     strand     they     will     most     likely     to     progress     and     pursue.          The     best     part     of     having     these    specialized    strands    is    that    you    are    assured    of    guidance    and    opportunity    to    discover    yourself.    
+                </p>
+
+                <p class="text-justify lead">
+                  The    Core    and    Applied    subjects    of    every    strand    of    Grade    11    in    CIIT    for    the    first    semester    are    Oral    Communication     in     Context,     Komunikasyon     at     Pananaliksik     sa     Wikang     Filipino     at     Kulturang     Pilipino,    General    Mathematics,    Earth    and    Life    Science,    Personal    Development,    Empowerment    Technologies,and    Physical    Education    &    Healthand    for    the    second    semester    are    Reading    and    Writing,    Pagbasa    atPagsusuri    ng    Iba't-­‐Ibang    Teksto    tungo    sa    Pananaliksik,    Statistics    and    Probability,    Understanding    Culture,    Society    ad    Politics,    Physical    Science,    Physical    Education    and    Health,    Practical    Research    I.    For    Grade    12,    theCore    and    Applied    subjects    of    only    Animation    and    Media    and    Visual    Arts    Strand    for    the    First    semester    are    Media    and    Information    Literacy,    Contemporary    Philippine    Arts    from    the    Regions,    Introduction    to    Philosophy    of    the     Human     Person,     Physical     Education     and     Health,     Filipino     sa     Piling     Larangan,     21stCentury     Literature    from     the     Philippines     and     the     World,     Entrepreneurship.    For     the    second     semester,     the     Core     subjects    of    Animation    and     Media&Visual     Arts     strand     is    Physical     Educationwhile     the     Applied     track     subjects     are    English    for    Academic    and    Professional    Purposes,    Practical    Research    II,    and    Elective    I    –CIIT    Values.    The    second     semester     of     the     Programming     Strand     hasCore     and     Applied     subjects     which     are     Physical    Education,     English     for     Academic     and     Professional     Purposes,     Practical     Research     II,     and     Elective    I    –CIIT    Values.
+                </p>
+
+                <p class="text-justify lead">
+                  The    Media    and    Visual    Art    Strand    of    CIIT    can    be    your    foundation    if    you    are    dreaming    to    have    a    career     in     the     media     and     creative     industry.    The     CIIT     SHS     school     offers     a     unique     and     specialized    
+                  curriculum     focusing     on     skill-­‐building    and     industry-­‐standard     learning.The    specialized    subjects     that     this    strand    of    CIIT    offers    are    Introduction    to    MMA,    History    of    Graphic    Design,    Elements    of    Graphic    Design,    Digital     Photography,     Writing     for     New     Media,     Fundamentals     of     Film     and     Video     Production,     and    Multimedia     Publishing.    The     courses     that     you     can     be     accredited     in     for     the     specialization     subjects     are    Bachelor     of     Fine     Arts     and     Bachelor     of     Multimedia     Arts.     The     available    internships    are     Videographer,    Photographer,    Production    Designer,    Graphic    Designer,    Illustrator,    and    Digital    Artist.
+                </p>
+
+                <p class="text-justify lead">
+                  The    Core    and    Applied    subjects    of    every    strand    of    Grade    11    in    CIIT    for    the    first    semester    are    Oral    Communication     in     Context,     Komunikasyon     at     Pananaliksik     sa     Wikang     Filipino     at     Kulturang     Pilipino,    General    Mathematics,    Earth    and    Life    Science,    Personal    Development,    Empowerment    Technologies,and    Physical    Education    &    Healthand    for    the    second    semester    are    Reading    and    Writing,    Pagbasa    atPagsusuri    ng    Iba't-­‐Ibang    Teksto    tungo    sa    Pananaliksik,    Statistics    and    Probability,    Understanding    Culture,    Society    ad    Politics,    Physical    Science,    Physical    Education    and    Health,    Practical    Research    I.    For    Grade    12,    theCore    and    Applied    subjects    of    only    Animation    and    Media    and    Visual    Arts    Strand    for    the    First    semester    are    Media    and    Information    Literacy,    Contemporary    Philippine    Arts    from    the    Regions,    Introduction    to    Philosophy    of    the     Human     Person,     Physical     Education     and     Health,     Filipino     sa     Piling     Larangan,     21stCentury     Literature    from     the     Philippines     and     the     World,     Entrepreneurship.    For     the    second     semester,     the     Core     subjects    of    Animation    and     Media&Visual     Arts     strand     is    Physical     Educationwhile     the     Applied     track     subjects     are    English    for    Academic    and    Professional    Purposes,    Practical    Research    II,    and    Elective    I    –CIIT    Values.    The    second     semester     of     the     Programming     Strand     hasCore     and     Applied     subjects     which     are     Physical    Education,     English     for     Academic     and     Professional     Purposes,     Practical     Research     II,     and     Elective    I    –CIIT    Values.
+                </p>
+
+                <p class="text-justify lead">
+                  The    Programming    Strand    is    where    you    can    experience    real-­‐world    programming    problems    while    still    in    Senior    High    School.    The    specialized    subjects    for    this    strandincludes“Introduction    to    Computing,    Computer     Programming     1     &     2,     Data     Structure     and     Algorithm,     Information     Management,     Object-­‐Oriented    Programming,    Introduction    to    Game    Design    and    Development,    and    Game    Programming.”The    college     courses    that     you     can     be     credited     to     when     you     complete     the    programming     strandare     BS    Computer     Science     and     BS     Entertainment     Multimedia     Computing.    The     available     jobs     are     as     follows:    System    Programmer,    System    Analyst,    Software    Application    Developer/Engineer,    Graphics    Programmer,    Game    Designer,    and    Senior    Interactive    Software    Developer.
+                </p>
+
+                <hr>
+                <h5>Media & Visual Arts Strand vs. Animation Strand</h5>
+                <hr>
+
+                <p class="text-justify lead">
+                  In    all    of    the    strands,the    students    will    be    takingbasic    subjects    as    their    Core    and    Applied    subjects    such     as     Practical     Research,     General     Mathematics,     Reading     and     Writing,     Physical     Education,     Physical    Science,and    Entrepreneurship.Their    specialization    subjects    however    will    be    mostly    different    for    every    strandbut    still    hassomething    in    common.The    Media    Visual    Arts    strand    and    the    Animation    strand    havesome    specialization    subjectsin    common.The    MediaVisual    Arts    strand    has    a    specialization    subjects    likeIntroduction    to    Multimedia    Arts    andTypography    and    Layout”    which    the    Animation    strand    also    has.    Both    of    the    strands    also    have    “Work    Immersion”    as    one    of    their    specialization    subject.
+                </p>
+
+                <p class="text-justify lead">
+                  However,    the    Media    &    Visual    Arts    strandand    the    Animation    strand    though    seem    similar    becauseboth    of    the    strands    progresses    from    creativity,    they    also    have    different    specialization    subjects.    For    the    Media&     Visual     Arts     strand     they     have    specialization     subjects     such     as    News     Writing,     Magazine     and    Illustrationwhile     the     Animation     Strand     hasHistory     of     Graphic     design,     Digital    Animation,     DigitalStoryboarding,    Color    theory,    2D    Animation    and    3D    modeling    specialization    subjects.
+                </p>
+
+                <p class="text-justify lead">
+                  Each     strand     has     unique    feature     that     can     be     credited     to     some    college     courses.    TheMedia     &    Visual    Arts    strand    and    Animation    strand    offers    subjects    that    can    be    credited    to    the    course    of    “Bachelor    of    Multimedia    Arts.The    difference    is    that    while    theMedia    &    Visual    Arts    strand    offers    subjects    that    can    be     credited     to     achieve    either    the    Bachelor     of     Fine     Arts     &     Bachelor     of     Multimedia     Arts,     the     Animation    Strand    offers    a    coursethey    can    be    credited    to    achieve    only    Bachelor    of    Multimedia    Arts.    Whilestudents    in    the    Media    Visual    Arts    strand    may    able    to    get    into    both    the    degrees    of    Bachelor    of    Fine    Arts    &    Bachelor    of    Multimedia    Arts    in    College,    students    from    the    Animation    strand    will    be    able    to    apply    their    acquired    designed    skill    to    build    up    theirportfolio    or    resume    in    applying    futurejobsas    an    option.
+                </p>
+
+                <p class="text-justify lead">
+                  In    terms    of    career    options    between    the    Media    &    VisualArts    strand    and    the    Animation    strand,    again    they    are    both     uniquefrom     each    other.The     career    options     for    the     Visual     &     Media     Arts     strand    mostly    focuses    on    Photography    and    Illustrations    while    the    Animation    strand    focuses    on    3D    modeling,    2D    3D    Animation,    and    Illustrations.The    Animation    students    will    most    likely    to    focus    on    the    3D    animation    because    of    the    demand    and    fulfillment    to    create    and    achieve    realisticanimated    work    of    art.
+                </p>
+
+                <hr>
+                <h5>Programming  Strand  vs.  Animation  Strand</h5>
+                <hr>
+
+                <p class="text-justify lead">
+                  In    terms    of    the    Core,    AppliedSpecialization    subjects,    thesimilaritiesbetween    the    Programming    Strand    and    the    Animation    Strand    is    that    they    both    have    the    same    core    applied    Subjects.    The    Core    and    Applied     subjects     are     considered     important     for     every     strand,    because     it     teaches     the     students    the    foundation     to     develop    their     knowledge     and     skills     not     for     college     but     also     for     future     careers.    The    difference     between     their     Core,     Applied     Specialization     subjects     of     the     Programming     Strand     and     the    Animation    Strand,    is    that    both    have    different    specialization    subjects    that    the    strand    focuseson.    For    the    Programming     strand,     their     specialization    subjects     focus     on     Programming     apps,     games,     or     softwares,    while    the    Animation    strand    focuses    on    animating    objects,    scenes,or    backgrounds.   
+                </p>
+
+                <p class="text-justify lead">
+                  Interms     of     College     Course     crediting,    the     Programming     strand    can    get    you    into    a    degree    in    BS    Computer    Science    and    BS    Entertainment    Multimedia    Computing    while    the    Animation    Strand    can    get    you    a    degree    on    Bachelor    of    Multimedia    Arts,theDegrees    that    you    can    get    in    the    Programming    strand    can    get     you     a     job     related    inmaking     computer     programs     or     handling     data.          Thereare     several     jobs     in     the    Philippines    that    are    hiring    workers    to    do    thesejobs,for    example,a    job    in    Cebu    that’s    hiring    Computer    Scientist    to    be    a    Data    Entry    Clerk    in    Cebu    or    there’s    a    job    in    PHILCAMP    in    Rizal    (Antipolo)    that’s    hiring    a    Computer    Scientist    to    be    a    Data    Entry    Specialist    (According    to    new    research...(Data    Handling    -­‐JobStreet,    n.d.).);    while    a    degree        in    Bachelor    of    Multimedia    Arts    fromthe    Animation    strand    can    get    you    a    job    in    multiple    Animation    companies    worldwide    such    as    Disney    or    in    Animation    Studios    in    the    Philippines    like    Toei    Animation    Philippines    Inc.
+
+                </p>
+
+                <p class="text-justify lead">
+                  There     are     some    differences between     the     Programming     Strand     and     the     Animation     Strandin    terms    of    job    internship.        In    the    Programming    Strand,    you    will    have    an    opportunity    to    getbroader    scope    of     jobsrelated     to    software     engineering,     game     development,and     datahandling.          In    the     Animationstrand,    it    leads    you    to    get    jobs    concentrating    inAnimation.In    the    Philippines,    there    are    currently    100+jobs    related    to    computer    programming    while    there    are    87    jobsfor    animators.    Even    though    there    are    a    lot     of     job     opportunities     in     the     Programming     Strand     than     in     the     Animation     Strand,    a    person’s     passionmust    be    considered    when    they    are    choosing    a    dream    job.    It    is    really    a    matter    of    choice    in    all    strands    and    course    you    will    take,    you    just    haveto    have    the    passion    and    the    driveto    be    successful.   
+                </p>
+
+                <hr>
+                <h5>Programming  Strand  vs.  Media & Visual Arts Strand</h5>
+                <hr>
+
+                <p class="text-justify lead">
+                  In    terms    of    the    Core,    Applied    and    the    Specialization    subjects    in    the    ProgrammingStrand    and    the    Media    Visual    Arts    strand,    they    both    have    similar    core    &    applied    subjects.    Both    of    these    strands    have    to    go     through     these    subjects,because     this     helps     the     students     to     become     industry     ready     when     they     are    about     to     applyforcollege     of     their     choice.    They    both    have     working     immersions     as     theirspecialization    subjects,    this    gives    the    students    in    both    of    these    strands    to    have    a    first    hand    mini-­‐interviewexperiencewith    one    of    the    partnered    companies    of    CIIT.    These    companies    focus    on    variations    of    the    digital    medium    like     Logos,     websites,     softwares,     etc.    The    immersion     will     give     the     students     a     guided     view     on     what     to    expect    in    the    aspect    of    their    chosen    careers.   
+                  <br><br>
+                  The     Programming     Strand     and     the     Media    Visual     Arts     Strand    have    a     different     specialization    subject    that    focuseson    educating    and    practicing    their    skills    to    the    professional    level.    The    Programming    strand     has     subjects     that     focus     on     Web     design     and     development,     software     engineering,     data     handling,and     game     developmentwhile     the    Media     VisualArts     Strand     focuses     on     Illustrations,     still     images,and    design.    TheMedia    Visualarts    strand    seems    to    focus    more    on    the    creative    side    while    the    Programming    strand    focuses    more    on    the    technical    side.
+                </p>
+
+                <p class="text-justify lead">
+                  In    terms    of    College    Course    crediting    in    the    strand,    they    do    not    have    anything    similar    but    they    have     a     lot     of     differences.     In     the     Programming     Strand,     the     students     here    canachieve     a     BS     Computer    Science    and    BS    Entertainment    Multimedia    Computing    while    the    Media    VisualArts    Strand;the    student    here    canachieve    a    Bachelor    of    Fine    Arts.    The    jobs    related    to    Computer    Programming    may    need    a    BS    in    Computer     Science     and     BS     Entertainment     Multimedia     Computing     to    qualify    while     the     jobs     related     to    being    a    2D/3D    Animator    may    only    require    adegree    in    Bachelor    of    Fine    Arts.
+                </p>
+
+                <p class="text-justify lead">
+                  In     terms     of     Job     Internship,    the    Programming    strand    can    probably    take    jobs    for    and    the    Media        Visual    Arts    Strand    is    that    the    career    options    for    the    Programming    Strand    are    focused    on    Web    design    and    development,    software    engineering,    data    handling,and    game    development    while    the    Media        Visual    Arts    Strand    focuses    on    Illustrations,    Logos,    Photography,    and    Design.The    career    options    related    to    the    Media        Visual    arts    strand    seem    to    focus    more    on    the    creative    side.    That’s    all    for    the    similarities    and    differences    of    the    subjects    included    in    each    strand,    College    Course    they    can    be    credited    to,and    Job    Internships    they    can    apply    in    their    strand.
+                </p>
+
+                <hr>
+                <h5>Conclusion</h5>
+                <hr>
+                <p class="text-justify lead">
+                  Each    strand    in    CIIT    isunique    from    each    other,    having    their    own    subjects    and    requirements    that    the    students    would    need    to    finish    their    strands,    and    even    though    one    strand    may    seem    to    give    better    job     options    fromthe     other,     they    are     all     equally     important,because    each     of     the     strands     contributes    differentskills     and     open     the     doors     to     develop     a     foundation     to     establish     career     choices.While     the    Programmerscan     make     thingseasier,    Artists     and     Animatorsexpresscreativity     to    nourishour    imagination.    To    summarize,    all    of    the    strands    have    different    specialized    subjectsthat    helpsthe    students    acquire    knowledge    and    develop    skills    in    their    chosen    strands.        Each    strand    also    allows    the    student    to    see    different     career     options,like     whenstudying     in     the     programming     strand,    can     mold    you     to     becomea    game    developer.Lastly,    each    of    the    strands    will    lead    you    to    a    specific    course    in    college    to    get    a    degree,which    can     be     verybeneficial     for     you    to     have    a    career     related     to     your     strand     in     the     future.    So    even    though    some    strands    offer    more    career    options    than    others,    that    does    not    mean    theother    strands    will    not    be    able    to    lead    to    a    successful    future.It    will    beup    to    the    student’s    passion    and    choices    on    which    strand    they’re    very    interested    in.We    should    aim    to    makelearninginteresting    and    fun,so    our    choices    arevery    importantto    develop    passion    and    skills    exciting.
+                </p>
+
+                <p>Resources</p>
+                <ul class="font-small">
+                    <li>Data    Handling    -­‐JobStreet.    (n.d.).    Job    Street.    Retrieved    April    21,    2021,    Retrieved from: <a href="https://www.jobstreet.com.ph/en/job-­‐search/data-­‐entry-­‐jobs/">Link</a></li>
+                    <li>Google    jobs.    (n.d.).    Google.    Retrieved    April    21,    2021,    Retrieved from: <a href="https://www.google.com/search?q=how+many+jobs+in+the+philippines+that+are+related+to+Animation&safe=active&ei=FpN_YMqlGI-­‐2mAWR7oXQAg&oq=how+many+jobs+in+the+philippines+that+are+related+to+Animation&gs_lcp=Cgdnd3Mtd2l6EAM6BQgAEJECOgIIADoFCAAQsQM6CAgAELEDEIMBOggILhCxAxCDAToCCC46CAguEMcBEKMCOgsILhCxAxDHARCjAjoICC4QkQIQkwI6BAgAEEM6BAgAEA06BggAEBYQHjoICCEQFhAdEB46BQghEKABOgcIIRAKEKABOgQIIRAVOgQIIRAKULZDWOuqAWDDrgFoC3ACeACAAdkBiAHZOJIBBzQ0LjI2LjGYAQCgAQGqAQdnd3Mtd2l6sAEAwAEB&sclient=gws-­‐wiz&uact=5&ibp=htl;jobs&sa=X&ved=2ahUKEwi_wrGcqo7wAhVRBKYKHW7tAjgQutcGKAB6BAgPEAQ#htivrt=jobs&htidocid=FC534n5PneG3-­‐AuEAAAAAA%3D%3D&fpstate=tldetail">Link</a></li>
+                    <li>Vacatures.    (n.d.).    Google.    Retrieved    April    21,    2021,    Retrieved from: <a href="https://www.google.com/search?q=how+many+jobs+are+available+in+computer+programming+2021&safe=active&ei=z5J_YJ-­‐xJY61mAXTrIW4Bw&oq=how+many+jobs+are+available+in+computer+programming+2021&gs_lcp=Cgdnd3Mtd2l6EAM6BwgAEEcQsAM6BggAEBYQHjoICCEQFhAdEB5Q5TRY8z9gikFoAnACeACAAagBiAG4BpIBAzEuNpgBAKABAaoBB2d3cy13aXrIAQjAAQE&sclient=gws-­‐wiz&uact=5&ibp=htl;jobs&sa=X&ved=2ahUKEwiVmfvzqY7wAhWLN5QKHa-­‐3BRcQutcGKAB6BAgQEAQ">Link</a></li>
+                    <li>Media    and    Visual    Arts.    (2021,    April    20).    CIIT    Philippines    School    -­‐Multimedia    Arts,    Web    Design,    3D    Animation,    Mobile    Game    Development. Retrieved from: <a href="https://www.ciit.edu.ph/senior-­‐highschool/media-­‐and-­‐visual-­‐arts/">Link</a></li>
+                </ul>
+              </div>
+            </div>
+
+
+
+            <!-- 4th ESSAY ENTRY -->
+            <div class="container my-5 controllable-container">
+              <div>
+                <h2 class="display-4">5 Types of Online Students</h2>
+                <span class="badge bg-success rounded-pill">Classification Essay</span>
+                <hr>
+                <div class="card card-body">
+                  <p class="card-subtitle text-muted mb-2">
+                    Written by Michael Jacob M. Delos Santos | April 30,2021 - 12:43 AM
+                  </p>
+                </div>
+                <hr>
+                  
+                <p class="text-justify lead">
+                  An    online    student    is    a    person    that    takes    classes    online    rather    than    being    in    the    school's    site.    They    join    online    meetings    to    hear    the    teacher    or    professor    speak    to    the    students.    They    can    even    have    a    one-­‐on-­‐one    session    with    their    teachers.    There    are    more    than    five    types    of    online    students,    but    I’m    just    going    to    explain    five    typesof    students.    One    type    is    the    Studious    student,    these    are    the    type    of    students    who    ask    a    lot    of    questions    and    go    deeper    into    the    course    of    material    than    they    should    be    studying.They    also    ask    for    more    hands-­‐on    homeworks    or    activities,because    they    believe    that    it    will    improve    their    abilities    in    their    everyday    lives.    The    secondone    is    the    Shy    student,    these    types    of    students    either    have    their    cameras    and    mics    off    all    the    time    and    they    ask    a    question    to    the    teacher    through    the    chat    box.    If    
+                  you    ask    them    anything    about    their    personal    life,they    would    usually    say    “I    don’t    remember”    or    “I    don’t    know”.    The    third    one    is    the    Class    clown    or    the    funny    student,    these    are    the    types    thatbring    laughter    to    both    the    teacher    or    his/her    classmates,    but    sometimes    their    jokes    are    distracting    that    it    makes    it    hard    to    concentrate    in    studying.    These    types    of    students    can    also    make    you    laugh    even    during    a    stressful    time,    whichmakes    them    look    like    they    don’t    care    what’s    going    on    in    their    life.The    fourthone    is    the    clueless    student,these    types    of    students    just    stare    at    the    classroom    and    they’re    sometimes    unaware    that    their    camera    and    mic    areturned    on.    These    types    of    studentsdon’t    even    know    what    the    topic    of    their    lesson    they    were    studying    during    their    online    class.        Lastly,    the    fifth    one    is    the    one    who    falls    asleep    in    class,these    types    of    students    sleep    during    an    online    class    because    they    lack    sleep    due    to    studying,    watching    Netflix,or    playing    games    for    too    long.    They    type    their    attendance    and    just    sleep    throughout    their    entire    online    classroom    session    and    their    teachers    won’t    even    notice.        As    we    go    through    our    education,    we    encounter    many    kinds    of    students,    but    the    emergence    of    the    pandemic    through    online    classes    brought    us    unique    types    of    students    especially    during    synchronous    classes.Online    schooling    might    be    the    new    norm    to    the    young    generations    and    I    know    that    there’s    still    more    on    the    lists    of    the    different    types,but    maybe    there    are    more    types    of    students    that    we    can    still    find    on    the    Internetthat    we    have    not    explored    yet.
+                </p>
+
+                <p class="text-justify lead">
+                  The    Studious    students, these    types    of    students    are    usually    the    best    in    class.    They    manage    theirpriorities    well    and    never    get    intimidated    to    ask    a    question    from    the    teacher    even    if    there    are    a    lot    of    students.    These    people    are    usually    the    most    confident    in    the    class    and    will    never    hesitate    to    turn    on    their    cameras    and    mics.The    neverget    shybecause    they    havepure    determination    on    what    they    want    to    learn.    They    have    high    goals    in    life    and    they    somehow    can    finish    their    assignments    on    time.    They    ask    lots    of    questions    and    they    go    deeper    into    their    studies,because    they    believe    it    will    improve    their    knowledge    and    skills.Before    the    lockdown,    I’ve    encountered    so    many    people    who    are    just    like    this    but    when    the    pandemic    started,    I’ve    seen    fewerpeople    being    so    studious.    Maybe    the    confinement    makes    us    less    inspired    and    sometimes    bored.        People    are    more    reluctant    to    socialize,    which    brings    up    my    next    topic.
+                </p>
+
+                <p class="text-justify lead">
+                  The    Shy    students    can    be    found    almost    at    any    school    you’ve    been    to.    They    don’t    have    that    manyfriends    and    would    rather    keep    their    small    circle    of    friends,usually    the    ones    they    are    very    much    comfortable    with.        They    are    not    that    confident    and    usually    have    inferior    feelings    before    getting    comfortable.        They    talk    less    to    strangers    because    they    are    usually    cautious    and    scared    when    they    don’t    know    the    person.    Theyonly    speak    when    they    are    askedto    doso,    normally    a    “one    question,    one    answer”    type    of    conversation.Most    of    the    time,    these    students    just    listen    to    the    instructor    and    sometimes    hesitate    to    ask    a    question.    If    they    have    a    question,    they    will    feel    insecure    and    think    it    might    be    stupid    to    ask,so    they    would    rather    not    ask.        Even    at    times    when    it    is    important    to    ask,    they    will    shy    away.    These    students    are    also    the    type    of    people    who    won’t    turn    on    their    camerasand    microphones,because    they    don’t    want    to    expose    their    comfort    zone.            This    might    also    be    their    way    of    coping    with    their    anxiety    and    or    their    nervousness.    They    are    usually    distracted    when    they    see    so    many    people    when    the    camera    is    on.    They    also    participate    less    on    social    media    like    Facebook,    discord,    messenger,    telegram,or    any    messaging    platform    available.To    be    honest,    I’m    a    bit    of    a    shy    student    myself    because    sometimes    I    feel    like    it’s    not    important    to    express    myself.    I    also    notice    some    of    my    classmates    are    like    thisas    well;they    talk    less    whenever    there    is    a    group    discussion.        Usually,    they    just    listen    to    their    leader    and    would    hesitate    to    share    their    thoughts.    They    are    sometimes    very    hard    to    handle,because    they    don’t    communicate    much.        It’s    even    harder    now,because    of    the    pandemic    and    we    hold    online    classes.        It    is    a    hassle    not    to    get    any    
+                  participation    from    them.    The    leader    must    be    able    to    work    on    their    patience    and    communication    skills    to    lure    them    intothe    group.
+                </p>
+
+                <p class="text-justify lead">
+                  The    Core    and    Applied    subjects    of    every    strand    of    Grade    11    in    CIIT    for    the    first    semester    are    Oral    Communication     in     Context,     Komunikasyon     at     Pananaliksik     sa     Wikang     Filipino     at     Kulturang     Pilipino,    General    Mathematics,    Earth    and    Life    Science,    Personal    Development,    Empowerment    Technologies,and    Physical    Education    &    Healthand    for    the    second    semester    are    Reading    and    Writing,    Pagbasa    atPagsusuri    ng    Iba't-­‐Ibang    Teksto    tungo    sa    Pananaliksik,    Statistics    and    Probability,    Understanding    Culture,    Society    ad    Politics,    Physical    Science,    Physical    Education    and    Health,    Practical    Research    I.    For    Grade    12,    theCore    and    Applied    subjects    of    only    Animation    and    Media    and    Visual    Arts    Strand    for    the    First    semester    are    Media    and    Information    Literacy,    Contemporary    Philippine    Arts    from    the    Regions,    Introduction    to    Philosophy    of    the     Human     Person,     Physical     Education     and     Health,     Filipino     sa     Piling     Larangan,     21stCentury     Literature    from     the     Philippines     and     the     World,     Entrepreneurship.    For     the    second     semester,     the     Core     subjects    of    Animation    and     Media&Visual     Arts     strand     is    Physical     Educationwhile     the     Applied     track     subjects     are    English    for    Academic    and    Professional    Purposes,    Practical    Research    II,    and    Elective    I    –CIIT    Values.    The    second     semester     of     the     Programming     Strand     hasCore     and     Applied     subjects     which     are     Physical    Education,     English     for     Academic     and     Professional     Purposes,     Practical     Research     II,     and     Elective    I    –CIIT    Values.
+                </p>
+
+                <p class="text-justify lead">
+                  The    third    one    is    the    Class    Clown    or    the    funny    student,these    types    are    the    ones    who    brings    laughter    to    the    class,    but    sometimes    their    jokes    are    distracting,    that    it    makes    it    hard    for    the    class    to    concentrate.        They    are    either    smart    because    of    their    witty    jokes    or    they    just    have    too    much    energy    and    confidence,sometimestheyjustcould    not    focus.        Sometimes,they    are    the    type    who    can    be    friendly    because    they    are    the    happy-­‐go-­‐lucky    type    of    person.        Although    sometimes,    they    only    have    high    confidence    when    they    joke    around    but    when    you    ask    them    to    do    serious    stuff,    they    shy    away.    These    types    of    students    love    to    make    everyone    happy    especially    when    people    listen    to    their    jokes.    Clown    students    sometimes    use    their    humor    to    escape    their    own    harsh    reality.    Social    media    and    TV    programs    usually    influence    their    jokes.    Although    they    sometimes    distract    the    class,    they    are    very    helpful    in    making    you    feel    less    anxious    or    stress.        Sometimes    being    a    class    clown    is    hard    because    I    think    that    it’s    disturbingto    come    up    with    jokes    in    your    mind    while    in    class    and    not    be    able    to    focus    on    your    studies.    It’s    hard    to    think    of    two    things    atthe    same    time    when    you’re    supposed    to    think    about    your    studies    only.    It’s    very    hard    to    think    about    fun    and    happy    thoughts    during    the    pandemic    because    of    all    the    chaos    happening    in    the    world,but    I    think    it’s    important    to    have    these    people    in    our    lives    because    even    a    joke    can    change    someone’s    state    of    mind    to    be    happy    again.
+                </p>
+
+                <p class="text-justify lead">
+                  The    Fourth    one    on    my    list    isthe    Clueless    student.        These    types    of    students    just    stare    at    the    classroom    and    they’re    sometimes    unaware    that    their    camera    and    mic    areturned    on.        They    are    the    daydreaming    type.        They    mostly    just    listen    to    the    teacher    and    keep    asking    questions    because    they    don’t    understand    what    they’re    listeningto.    These    types    of    students    don’t    even    know    what    the    topic    of    their    lesson    is    about    and    just    write    down    notes    and    study    it    later.They    will    ask    questions    and    questions    that    have    obvious    answers    to.    These    students    also    ignore    the    mentions    they    get    on    the    group    chat    of    their    classmates    and    they    will    only    answer    them    if    their    parents    told    them    to    answer    it    or    if    they    feel    like    he/she    should    answer    it,    or    maybe    because    they    forgot    that    their    phone    was    on    “silent    mode”    that’s    why    he/she    can’t    hear    the    mentions    they    get.        It’s    hard    to    get    the    attention    of    these    people    because    of    their    lack    of    sense    in    their    environment.    When    you’re    paired    in    a    group    work    with    these    type    of    people    then,good    luck    making    him/her    cooperate    with    you,    you’ll    most    likely    be    the    leader    of    the    group    instantly.
+                </p>
+
+                <p class="text-justify lead">
+                  The    Fifth    student    on    my    list    is    the    Sleepy    student,    these    types    of    students    sleep    during    an    online    class.    They    will    fill    their    attendance    first    and    then    sleep    throughout    their    online    class.        Each    of    the    sleepy    students    have    different    reasons    why    they    lack    sleep,    it’s    either    they    were    studying    for    too    long,    or    they    were    watching    Netflix    and/or    playing    games    past    their    bedtime.    A    coffee    drink    might    help    them    survive    through    one    online    class    or    two    but    they    will    suffer    from    sleep    deprivation    again    once    the    coffee    effect    runs    out.        During    the    pandemic,    it’s    hard    to    keep    track    of    everything    these    days    because    before,    schools    make    the    schedules    for    you    to    follow    which    gives    us    time    to    think    for    our    own    schedules    and    just    implement    our    time    to    the    school’s    schedule.
+                </p>
+
+                <p class="text-justify lead">
+                  Online    Meetings    will    still    be    the    norm    that    the    young    generations    should    be    able    to    adapt    to,    and    there    are    still    more    types    of    online    students    that    I    haven’t    been    able    to    discover    yet    but    maybe    there    are    more    types    of    students    that    we    can    still    find    on    the    internet    that    we    have    not    explored    yet.    I    
+                  described what    studious    students    are    and    how    they    are    always    best    in    class,    alsowhat    shy    students    are    and    why    do    they    always    struggle    in    class    base    on    my    own    experiences.    After    that,    I    narratedwhat    the    Class    Clowns    are    in    online    classes    and    how    they    could    cheer    people    even    in    hard    times    during    the    pandemic.    I    also    mentionedwhat    clueless    students    are    and    how    it’s    hard    to    cooperate    with    them.    Lastly,    I    statedwhat    sleepy    students    are    and    why    do    they    lack    sleep    based    on    my    research    and    experiences.    These    are    my    top    five    online    students    that    I    usually    encounter    duringonline    class,    there    is    more    to    this    list    that    I    haven’t    mentioned    in    the    essay    yet,    but    these    are    the    types    of    online    students    I    choose    to    describe    during    my    experiences    in    the    pandemic.        During    my    online    class    experiences    throughout    thisquarantine,    I    encountered    almost    all    of    these    students;most    of    them    are    shy    including    myself,    and    some    clueless.    It’s    just    sad    that    the    quarantine    turned    online    classes    like    it’s    something    you    can’t    have    fun    with,    but    with    the    news    online,    is    it    still    possible    to    do    a    face-­‐to-­‐face    class    in    the    future?        I    want    to    leave    this    essay    on    a    good    note    by    saying    that    even    if    we    can’t    physically    meet    each    other    in    a    couple    of    years,    we    have    to    keep    trying    to    stay    strong,    discipline,    follow    health    protocols,    and    most    importantly,    PRAY.        May    we    live    strong    and    look    forward    tobetter    times    ahead.
+                </p>
+
+                <p>Resources</p>
+                <ul class="font-small">
+                  <li>17    Types    of    Students    in    an    Online    Class    |    Class    T1T5    Wiki    |    Fandom.    (n.d.).    Class    T1T5    Wiki.    Retrieved    April    29,    2021,    retrieved from: <a href="https://class-­‐t1t5.fandom.com/wiki/17_Types_of_Students_in_an_Online_Class">Link</a></li>
+                  <li>Team,    U.    (2019,    December    18).    13    Types    of    Students    and    How    to    Deal    with    Them.    Unicheck    Blog    for    Education    Junkies.   retrieved from: <a href="https://unicheck.com/blog/types-­‐of-­‐students">Link</a></li>
+                </ul>
+              </div>
+            </div>
+
+
+
+            <!-- 5th ESSAY ENTRY -->
+            <div class="container my-5 controllable-container">
+              <div>
+                <h2 class="display-4">Recipe: How to make my Mom's Recipe of Adobo</h2>
+                <span class="badge bg-info rounded-pill">The Process Text</span>
+                <span class="badge bg-lightgrey rounded-pill"><i class="text-rainbow">MJ's Favourites</i></span>
+                <hr>
+                <div class="card card-body">
+                  <p class="card-subtitle text-muted mb-2">
+                    Written by Michael Jacob M. Delos Santos | April 30,2021 - 12:43 AM
+                  </p>
+                </div>
+                <hr>
+                  
+                <p class="text-justify lead">
+                  The Chicken Adobo is a type of Filipino chicken stew that originated in the Philippines. 
+                  Chicken pieces aremarinated in soy sauce and spices, pan-fried and stewed until tender. The dish gained popularity because of its delicious taste and ease in preparation.  Today,I’m going to explain my mom’s variation of the Chicken Adobo recipe with a few added steps andmethods to  make  the  original  Chicken  Adobo  taste  a  bit  better.  This  recipe  will  take  about  around  30 
+                  minutes.  You can also use pork instead of chicken but it will take a longer simmer time,
+                  which increases  the  total  time  of  the  recipe  to  about  around  40 minutes.  
+                  Our famous Filipino Adobo derive  from  the  different  cultures  that  influenced  our  country.  
+                  Each  version  of  adobos ineach household varies from one household to another, in my particular household;
+                  my mom’s version of  adobo  is  a  fusion  of  Chinese and Spanish  influences.  
+                  It’s  also  an  easy  dish  that  you  can follow and you will certainly enjoy, 
+                  because of its flavor and aroma.
+                </p>
+
+                <p class="text-justify lead">
+                  To start off, we first need our ingredients; there are seven types of ingredients on our
+                  list. We have meat, aromatics, vegetables, herbs and spices, then our marinade and slurry,
+                  which are the two liquids in our ingredients. You can also add 4 boiled eggs into our list of 
+                  ingredients if you want some boiled eggs in your Chicken Adobo. For our meat, we need a kilo 
+                  of Chicken Adobo cut, it could be around 1 to 1.5 kilos, there are chicken adobo cuts available 
+                  in supermarkets and meat stores, but if there aren’t any, you can ask your local butcher to chop 
+                  your chicken into pieces. For our aromatics, we need 1 whole garlic and 1 medium onion, (the 
+                  garlic must have 8-10 cloves). For our vegetables, we need two Medium Potatoes. For our 
+                  Herbs & Spices, we need 2-3 pieces of Laurel leaves to make it smell good. We will also need 
+                  cooking oil to fry our herbs, spices, vegetables and our chicken. For the marinade, we need 2 
+                  parts of vinegar and 1 part of soy sauce, each part is 50 millimeters, then we need 1 table 
+                  spoon of oyster sauce and 1 tablespoon of either brown or white sugar. For our Slurry, we need 
+                  2 tablespoons of water and 1 tablespoon of cornstarch flour. If you want, it’s optional to add 4 
+                  boiled eggs to our Chicken Adobo to add extra flavor to the Chicken Adobo. 
+                </p>
+
+                <p class="text-justify lead">
+                  The second thing we need is our equipment. This list of equipment is what my mom 
+                  uses to cook her Chicken Adobo recipe. We would need a bowl, this is where we put our liquid 
+                  marinade, a small bowl for the slurry sauce and then a big bowl for the chicken pieces and a 
+                  platter to organize the vegetables, herbs and spices. We will also need a frying pan or a 
+                  medium sauce pot that are either stainless or non-stick, either one works, this is where we cook 
+                  the chicken and then a sautéing laddle to sauté the Chicken and other ingredients. Of course,
+                  we also need a chopping knife and a chopping board to prepare our vegetables, like smashing
+                  the gloves of our garlic and to chop our onions, potatoes, since the meat is already cut, we 
+                  won’t be using our knife to chop any meat.
+                </p>
+
+                <p class="text-justify lead">
+                  Finally, we can go on with the procedures in making my mom’s Chicken Adobo recipe. 
+                  The first major step, is setting the ingredients for cooking our Chicken Adobo. First, we need 
+                  to set our chopping board for the aromatics and vegetables before preparing the meat. We need 
+                  to peel the cloves of the garlic by smashing it and then we set it aside. We need to do this to 
+                  make our food flavorful later. Next is the onion, we need to peel the skin of the onion and then 
+                  chop it into quarters, meaning you have to slice the onion into halves two times. Next is the 
+                  medium potatoes, peel the potato and chop it into big cubes, and then we put the big cubes of 
+                  potatoes on a bowl of water to avoid from darkening or oxidation. Next is the marinade sauce, 
+                  we will need to measure our liquids for our marinade, then mix the marinade ingredients in a 
+                  bowl, then taste the sauce, you may also adjust it according to your taste. Set it aside, we will 
+                  need this for our sauce in the Chicken adobo. Next is preparing the chicken, we need to clean, 
+                  wash and drain the water, and then set aside in a bowl, clean your hands afterwards. Next is to fry our potatoes, my mom likes to put fried potatoes in the adobo to add texture, first we put
+                  about 3 table spoons of cooking oil on the pan. Then, we heat the cooking oil for a few minutes 
+                  and then we start frying the potatoes, and then if all your potatoes have at least two sides that 
+                  are fried & golden brown, you can remove and put the potatoes on a plate with towel napkin to 
+                  remove excess oil. Next is sautéing the onion and garlic, with the remaining oil in the pan, sauté 
+                  the onion and garlic for 1 min on low fire, and then after that, you can either set it aside or retain 
+                  the onion and garlic on the pan.
+                </p>
+
+                <p class="text-justify lead">
+                  The second major step of the procedure is to cook or sautéing our chicken in the pan. 
+                  We would need to brown the chicken by searing it, you will see bits of brown on the skin to seal 
+                  the moisture of the chicken. With our ingredients ready to be placed to the pan. We can then 
+                  continue to the second major step which is to cook the chicken. First, we need to fry the 
+                  Chicken pieces skin side first. If the blood is almost gone and there’s a bit of brown on the skin, 
+                  that means the chicken cube is almost cooked, we can then put our aromatics in which is our 
+                  onion slices and then put our smashed garlic cloves in, we need to do this to add flavor to the 
+                  chicken. Next is to add more flavor and fragrance to our Chicken Adobo, we would need our 
+                  laurel leaves and place it anywhere in the pan with our Chicken adobo, this will add its distinct 
+                  flavor and a good smell to our Chicken adobo. Next is to pour the blended marinate to the pan, 
+                  which will give it some sweet salty taste to the chicken. Next is to simmer our chicken for a 
+                  while, we will need to cover the pan with a lid and then set your gas stove to medium heat, and 
+                  then we will let it simmer for 25-30 minutes to reduce the liquid.
+                </p>
+
+                <p class="text-justify lead">
+                  The third major step is adding the slurry, now this will give the sauce of the Chicken 
+                  adobo it’s viscosity that will make the sauce more thick and appealing to eat. We would need a 
+                  separate container to dissolve 1 tablespoon of cornstarch in 2 tablespoons of water. Now mix it 
+                  until the sauce becomes a bit slurry and sticky.
+                </p>
+
+                <p class="text-justify lead">
+                  Let’s check if the liquid inside the Chicken adobo is reduced to almost half the size of the 
+                  pan. If it is then we can move on to our fourth major step. The fourth major step is to add in your 
+                  fried potatoes then pour mixed slurry and fold in everything to incorporate the adobo sauce to 
+                  complete the dish. Next is to reduce the fire to low heat so that we can wait for the sauce to 
+                  thicken, lowering the heat will enable the sauce to thicken.
+                </p>
+
+                <p class="text-justify lead">
+                  The last step is the serving of the Chicken adobo. We would need our big bowl for this 
+                  because this is where we’ll put our Chicken adobo. If you like you can add 4 of your boiled eggs 
+                  to the Chicken Adobo to add as additional topping to your Chicken Adobo. Finally, our Chicken 
+                  Adobo is complete.
+                </p>
+
+                <p class="text-justify lead">
+                  The famous Filipino adobo derive from the different cultures that influenced our country, 
+                  which is mostly Chinese & Spanish. Each version of Adobos of each household varies from one 
+                  household to another, in my particular household, my mom’s version of adobo is a fusion of 
+                  Chinese and Spanish influence. Mostly Chinese influence because I have a pure Chinese 
+                  grandfather myself. It’s also an easy dish to follow which you will all enjoy once you get the 
+                  recipe done. To summarize, the first step of making my mom’s version of the Chicken Adobo, you have to set the ingredients for cooking the Chicken Adobo, which is to quarterly chop the 
+                  garlics, the onions and the potatoes. The next one is to make the marinade or sauce and then 
+                  clean the chicken, and then after that you will need to fry the potatoes and then sauté the onion 
+                  and garlic in the pan. The second part is to fry the chopped chicken pieces, which is to 
+                  incorporate everything into the pot or pan, then letting it simmer for 25-30 minutes and then 
+                  while waiting, you can do the third step which is to make the slurry for the sauce in order to 
+                  make it thicker. After waiting, you can check if the liquid is reduced by half the size of the pan 
+                  and then, you can incorporate the slurry sauce to the marinade in the pan. Then you’re done, 
+                  you serve it hot in a big bowl, and if you want you can add 4 boiled eggs to the adobo dish to 
+                  add flavor to it. And that’s it for my mom’s recipe, pretty easy? Well for the most part it is.
+                </p>
+
+                <p class="text-justify lead">
+                  If there is anything that I can eat that I won’t get tired off, it’s the Filipino Adobo, it’s so 
+                  flavorful that it feels like it takes years to understand all its flavor, my mom’s recipe just 
+                  enhances this experience by making it taste better and making it easier to prepare. It is really 
+                  simple, you don’t need fancy tools to make this dish, you just need patience, determination and 
+                  a perfect practice of your palate. Make sure to understand what each ingredient does before 
+                  adding it to your dish, because a single ingredient can change its entire flavor.
+                </p>
+
+                <p>Resources</p>
+                <ul class="font-small">
+                  <li>My mom's special brain</li>
+                </ul>
+              </div>
+            </div>
+
+
+
+          </div>
+
+
+
+
+
+        </div>
+    </div>
+
+    <!-- modify this form HTML and place wherever you want your form -->
+    <div class="card">
+      <div class="card-body p-5">
+        <h4 class="card-title">Liked our essay and/or Blog website?</h4>
+        <p class="card-subtitle text-muted mb-2">Please feel free to leave us a message anytime! (A critique on our essay/website will be helpful)</p>
+        
+        <form
+        action="https://formspree.io/f/mrgrpewa"
+        method="POST"
+        >
+        <label>
+          Your email:
+          <input type="email" name="_replyto">
+        </label>
+        <br><br>
+        <label>
+          Your message:
+          <textarea name="message"></textarea>
+        </label>
+        <br><br>
+    
+        <!-- your other form fields go here -->
+    
+        <button type="submit" class="text-rainbow-hover-black btn btn-light send-btn">Send</button>
+        </form>
+        
+      </div>
+    </div>
+
+
+
+    
+
+
+
+  <!-- FOOTER -->
+  <footer class="main-footer">
+      <div class="container-fluid bg-dark text-light">
+          <div class="row p-5">
+              <div class="col-lg-6 col-sm-12">
+                  <h4>Group Members</h4>
+                  <p>
+                      Jayme Lenon - Writer
+                  </p>
+                  <p>
+                      Michael Jacob M. Delos Santos - Writer and Web Scripter & Designer
+                  </p>
+              </div>
+
+              <div class="col-lg-6 col-sm-12 ">
+                  <h4>Follow Us:</h4>
+                  <p>
+                      Michael's Social Accounts:
+                  </p>
+                  <ul class="list-unstyled d-inline-flex px-2">
+                      <li class="pr-2">
+                          <a href="https://www.facebook.com/jacob.delossantos.927/">
+                              <span class="fa fa-facebook-square fa-2x" title="Michael's Facebook"></span>
+                          </a>
+                      </li>
+                      <li class="px-2">
+                          <a href="https://www.youtube.com/channel/UCd-IjLA58Xx_bFqQ46MBZPA">
+                              <span class="fa fa-youtube-play fa-2x" title="Michael's YouTube"></span>
+                          </a>
+                      </li>
+                  </ul>
+
+                  <p>
+                      Jayme's Social Accounts:
+                  </p>
+
+                  <ul class="list-unstyled d-inline-flex px-2">
+                      <li class="p-2">
+                          <a href="https://www.facebook.com/jaylen72">
+                              <span class="fa fa-facebook-square fa-2x" title="Michael's Facebook"></span>
+                          </a>
+                      </li>
+                  </ul>
+                  <br>
+                  <img class="img-icon" src="../../PNG/CIIT-Logo.png">
+              </div>
+          </div>
+      </div>
+  </footer>
+  
+  <script>
+    ScrollReveal().reveal('body');
+  </script>
+</body>
+</html>
