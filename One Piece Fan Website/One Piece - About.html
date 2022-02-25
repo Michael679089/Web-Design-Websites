@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta Charset -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    <!-- CSS Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Script Jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Google Fonts: Monsterrat -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700&display=swap" rel="stylesheet">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <title>One Piece - About</title>
+</head>
+
+<style>
+
+    * {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+    }
+    /*================ NAVIGATION BAR ================*/
+    
+    /*
+    Tips:
+    > !important = it overrides css properties of jquery.
+    
+    */
+    
+    /* Navigation Bar Brand */
+    .navbar-brand img {
+    height: 3rem;
+    }
+    
+    .navbar {
+    font-size: 1.15rem;
+    font-weight: 600;
+    letter-spacing: .1rem;
+    box-shadow: 0rem 0.5rem 0.5rem rgba(0,0,0, 0.1);
+    background-color: rgba(0,0,0, 0.1);
+    z-index: 1;
+    }
+    
+    /* navigation items & links */
+    .nav-item {
+    padding: 0.5rem;
+    }
+    
+    /* NavLink & Hover */
+    .nav-link {
+    color: #5b5555!important;
+    }
+    
+    .nav-link p {
+    height: 0.5rem;
+    }
+    
+    .active {
+    color: #4981b3!important;
+    }
+    
+    .nav-link.active,
+    .nav-link p:hover {
+    color: #4981b3;
+    }
+
+    /*================ IMAGE FLUID ================*/
+
+    .image {
+        background-image: url("one-piece-banners/one-piece-banner-stampede-1.png");
+        background-position: center;
+        background-size: cover;
+        position: relative;
+        height: 20em;
+    }
+
+    #text-block {
+        position: absolute;
+        bottom: 10px;
+        left: 20px;
+        padding-left: 20px;
+        padding-right: 20px;
+        border-radius: 0.2em;
+    }
+
+
+    .image-2 {
+        background-image: url('pngarea.com_old-paper-scroll-3698380.png');
+        background-position: center;
+        background-size: 50em 15em;
+        background-repeat: no-repeat;
+    }
+
+    .text-indent-1 p {
+        text-indent: 1em;
+    }
+
+    /*================ Styling the Pixel Scroll ToBe Responsive ================*/
+    .image-2 {
+        background-position: center;
+        background-size: 50em 15em;
+        background-repeat: no-repeat;
+    }
+    @media only screen and (min-width: 1000px) {
+        .image-2 {
+            background-image: url('pngarea.com_old-paper-scroll-3698380.png');
+        }
+    }
+
+    @media only screen and (max-width: 1000px) {
+        .image-2 {
+            background-image: url('pngarea.com_old-paper-scroll-3698380.png');
+            background-size: 25em 7.5em;
+        }
+    }
+
+    /*================ IMAGE SIZES ================*/
+    .img-sm {
+        width: 50%;
+        height: 50%;
+        justify-content: center;
+    }
+
+    /*================ Footer ================*/
+    footer {
+        background-color: #383838;
+        padding: 1rem 2rem 3rem;
+    }
+    footer img {
+        height: 3.5rem;
+        margin: 1.5rem auto;
+    }
+
+    footer p, footer a
+    .socket a {
+        color: white;
+        text-decoration: none;
+    }
+
+    ul.social {
+        list-style-type: none;
+        display: flex;
+        max-width: 16rem;
+        margin: 0 auto;
+        padding: 0;
+    }
+
+    ul.social li {
+        margin: 0 auto;
+    }
+
+    footer .svg-inline-fa {
+        color: #68a0d2;
+    }
+
+    /* SOCKET */
+    .socket {
+        background-color: #2222;
+        border-top: 0.1rem solid #4981b3;
+    }
+
+    /* Social Icons */
+
+    
+</style>
+
+
+<!-- Website Scripts -->
+<script> 
+    $(document).ready(function () {
+        // Start-up
+        
+        
+        // Methods
+        $("#events-list").click(function(){
+            $("#events-list").text("Events 🚩");
+            $("#hide-items").slideToggle("slow");
+        });
+    });
+</script>
+
+<body>
+<!-- Navigation Bar -->
+<nav class="navbar bg-light navbar-light navbar-expand-lg">
+    <div class="container">
+        <a href="" class="navbar-brand">
+            <img src="one-piece-logo-1.png" alt="one-piece-logo" title="one-piece-logo">
+        </a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+            <span class="navbar-toggler-icon">
+            </span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a href="One Piece - Index.html" class="nav-link" id="home-link">
+                       <p>
+                           Home
+                        </p>
+                    </a>
+                </li>
+                <li class="nav-item active">
+                    <a href="One Piece - About.html" class="active nav-link" id="about-link">
+                        <p>
+                            About
+                        </p>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="One Piece - Characters.html" class="nav-link" id="Characters-link">
+                        <p>
+                            Characters
+                        </p>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="One Piece - Cast.html" class="nav-link" id="home-link">
+                        <p>
+                            Cast
+                        </p>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="One Piece - Store.html" class="nav-link" id="home-link">
+                        <p>
+                            Store
+                        </p>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="One Piece - Contact Us.html" class="nav-link" id="home-link">
+                        <p>
+                            Contact Us
+                        </p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<!-- End Navigation -->
+
+<!-- FLUID IMAGE -->
+<div class="container-fluid image p-5">
+   <div id="text-block" class="text-center bg-dark">
+    <h1 class="text-white">
+            One Piece - About Page
+        </h1>
+   </div>
+</div>
+<!-- END FLUID IMAGE -->
+
+<!-- HEADING AAND TEXT -->
+<div class="col-12 text-center py-5">
+    <div class="image-2 p-5">
+        <h1> ABOUT </h1>
+        <div class="border-top border-danger w-50 my-3 mx-auto"></div>
+        <p class="lead">
+            Info about the Manga, the Anime, and the Creator
+        </p>
+        <br>
+    </div>
+</div>
+
+<div classes="container p-4 border-top">
+    
+    
+    <div class="row m-0 text-indent-1">
+        <div class="col-8 p-5">   
+            
+            <!-- About the Creator -->
+            <h1 class="pb-2 px-5">About the Creator 📝</h1>
+            <hr>
+            <p class="pb-2">
+                Eiichiro Oda (Japanese: 尾田 栄一郎, Hepburn: Oda Eiichirō, born January 1, 1975) is a Japanese manga artist and the creator
+                of the series One Piece (1997–present). With more than 480 million tankōbon copies in circulation worldwide, One Piece
+                is both the best-selling manga and the best-selling comic series of all time, in turn making Oda one of the best-selling
+                fiction authors. The series' popularity resulted in Oda being named one of the manga artists that changed the
+                history of manga.
+            </p>
+    
+            <h4>Early Life</h4>
+            <p class="pb-2">
+                Eiichiro Oda was born on January 1, 1975 in Kumamoto, Japan. He said that at age four he resolved to become a manga
+                artist in order to avoid having to get a "real job". His biggest influence is Akira Toriyama and his series Dragon
+                Ball. He recalls that his interest in pirates was probably sparked by the popular TV animation series titled Vicky
+                the Viking. He submitted a character named Pandaman for Yudetamago's classic wrestling manga Kinnikuman. Pandaman was
+                not only used in a chapter of the manga but would later return as a recurring cameo character in Oda's own works.
+            </p>
+    
+            <h4> Personal Life </h4>
+            <p class="pb-2">
+                At the age of 17, Oda submitted his work Wanted! and won several awards, including second place in the coveted Tezuka
+                Award (He was called Kikondo Tsukihimizu, that means roughly Thufrisat Montuewed (Japanese surnames are usually before
+                first name)). That got him into a job at the Weekly Shōnen Jump magazine, where he originally worked as assistant to
+                Shinobu Kaitani's series Suizan Police Gang before moving to Masaya Tokuhiro on Jungle King Tar-chan and Mizu no
+                Tomodachi Kappaman, which gave him an unexpected influence on his artistic style. At the age of 19, he began working
+                as an assistant to Nobuhiro Watsuki on Rurouni Kenshin, before winning the Hop Step Award for new manga artists. Watsuki
+                credits Oda for helping create the character Honjō Kamatari who appears in Rurouni Kenshin.
+                
+                During this time, Oda drew two pirate-themed one-shot stories called "Romance Dawn", which were published in Akamaru
+                Jump and Weekly Shōnen Jump respectively in late 1996. "Romance Dawn" featured Monkey D. Luffy as the
+                protagonist, who then became the protagonist of One Piece.
+                
+                In 1997, One Piece began serialization in Weekly Shōnen Jump and has become not only one of the most popular manga in
+                Japan, but the best-selling manga series of all time. It sold 100 million collected tankōbon volumes by February
+                2005, over 200 million by February 2011, had 320,866,000 copies printed worldwide by December 2014, 430
+                million volumes in circulation worldwide as of October 2017, 440 million copies sold as of May 2018 and 450
+                million in print as of March 2019.
+                
+                Additionally, individual volumes of One Piece have broken publishing records in Japan. Volume 56 received the highest
+                initial print run of any manga, 2.85 million copies, in 2009. Volume 57's print of 3 million in 2010 was the highest
+                first print for any book in Japan, not just manga. A record that was broken several times by subsequent volumes and
+                currently held by 67's 4.05 million initial printing in 2012. In 2013, the series won the 41st Japan Cartoonists
+                Association Award Grand Prize, alongside Kimuchi Yokoyama's Nekodarake Nice.
+                
+                In a 2008 poll, conducted by marketing research firm Oricon, Oda was elected fifth most favorite manga artists of Japan.
+                He shared the place with Yoshihiro Togashi, creator of YuYu Hakusho and Hunter × Hunter. In their 2010 poll on the
+                Mangaka that Changed the History of Manga, Oda came in fourth.
+                
+                For the tenth One Piece animated theatrical film, Strong World, Oda created the film's story, drew over 120 drawings for
+                guidance and insisted Mr. Children provide the theme song. Additionally, a special chapter of the manga was
+                created and included in tankōbon volume 0, which was given free to attendees of the film and also contained his drawings
+                for the film.
+                
+                Oda and Akira Toriyama created a 2007 crossover one-shot called Cross Epoch, that contains characters from Toriyama's
+                Dragon Ball and Oda's One Piece. In 2013, they each designed a Gaist character for the video game Gaist Crusher.
+            </p>
+
+            <!-- About the Anime -->
+            <h1 class="pb-2 px-5">What's the story all about? 📖</h1>
+            <hr>
+            <p class="pb-2">
+                One Piece is a Japanese manga series written and illustrated by Eiichiro Oda. It has been serialized in Shueisha's
+                Weekly Shōnen Jump magazine since July 1997, with its individual chapters compiled into 98 tankōbon volumes as of
+                February 2021. The story follows the adventures of Monkey D. Luffy, a boy whose body gained the properties of rubber
+                after unintentionally eating a Devil Fruit. With his crew of pirates, named the Straw Hat Pirates, Luffy explores the
+                Grand Line in search of the world's ultimate treasure known as "One Piece" in order to become the next King of the
+                Pirates.
+            </p>
+
+            <h4>Premise</h4>
+            <p class="pb-2">
+                The series focuses on Monkey D. Luffy, a young man who, inspired by his childhood idol and powerful pirate "Red Haired"
+                Shanks, sets off on a journey from the East Blue Sea to find the titular treasure and proclaim himself the King of the
+                Pirates. In an effort to organize his own crew, the Straw Hat Pirates, Luffy rescues and befriends a swordsman
+                named Roronoa Zoro, and they head off in search of the One Piece. They are joined in their journey by Nami, a navigator
+                and thief; Usopp, a sniper and a pathological liar; and Vinsmoke Sanji, a perverted chef. They acquire a ship named the
+                Going Merry and engage in confrontations with notorious pirates of the East Blue. As Luffy and his crew set out on
+                their adventures, others join the crew later in the series, including Tony Tony Chopper, a doctor and anthropomorphized
+                reindeer; Nico Robin, an archaeologist and former assassin; Franky, a cyborg shipwright; Brook, a skeletal musician and
+                swordsman; and Jimbei, a fish-man helmsman and former member of the Seven Warlords of the Sea. Once the Going Merry
+                becomes damaged beyond repair, the Straw Hat Pirates acquire a new ship named the Thousand Sunny. Together, they
+                encounter other pirates, bounty hunters, criminal organizations, revolutionaries, secret agents and soldiers of the
+                corrupt World Government, and various other friends and foes, as they sail the seas in pursuit of their dreams.
+            </p>
+
+            <h4>Location/Setting 🌎</h4>
+            <div class="card">
+                <img class="card-img-top img-sm" src="location of One Piece.png" alt="One Piece Location">
+            </div>
+            <p class="pb-2">
+                The world of One Piece is populated by humans and many other races, such as fish-men and merfolk (two races of
+                fish/human hybrids), dwarves, minks (a race of humanoids with animal features), and giants. It is covered by two vast
+                oceans, which are divided by a massive mountain range called the Red Line, which is also the only continent in the
+                world. The Grand Line, a sea that runs perpendicular to the Red Line, further divides them into four seas:
+                North Blue, East Blue, West Blue, and South Blue. Surrounding the Grand Line are two regions
+                called Calm Belts, similar to horse latitudes, which experience almost no wind or ocean currents and are the
+                breeding ground for huge sea creatures called sea kings. Because of this, the calm belts are very effective
+                barriers for those trying to enter the Grand Line. However, navy ships, members of an intergovernmental organization
+                known as the World Government, are able to use a sea-prism stone to mask their presence from the sea kings and
+                can simply pass through the calm belts. All other ships are forced to take a more dangerous route, going through a
+                mountain at the first intersection of the Grand Line and the Red Line, a canal system known as Reverse Mountain.[Jp
+                13] Sea water from each of the four seas runs up that mountain and merges at the top to flow down a fifth canal and
+                into the first half of the Grand Line, called Paradise because how it compared to the second half. The second half of
+                the Grand Line, beyond the second intersection with the Red Line, is known as the New World.
+                
+                The currents and weather of the Grand Line's open sea are extremely unpredictable, whereas in the vicinity of islands
+                the climate is stable. The magnetic fields within the Grand Line cause normal compasses to malfunction, making it
+                even more difficult to navigate, and instead a special compass called a Log Pose must be used. The Log
+                Pose functions by locking on to one island's magnetic field and then locking on to another island's magnetic field.[11]
+                The time for it to set depends on the island. This process can be bypassed by obtaining an Eternal Pose, a
+                Log Pose variation that is permanently set to a specific island and never changes.
+                
+                The world of One Piece includes animals that function like devices. Transponder Snails are snail-like animals
+                that act like a rotary phone, fax machine, or camera. Dials, the shells of certain sky-dwelling animals,
+                can be used to store kinetic energy, wind, sound, images, heat, and the like and have various applications.
+            </p>
+
+            <!-- Organizations -->
+            <h1 class="pb-2 px-5">The Organizations in One Piece? </h1>
+            <hr>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <td>Rank</td>
+                        <td>Name</td>
+                        <td>Total Bounty (B)</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">1</th>
+                        <td>Straw Hat Pirates</td>
+                        <td>B3,161,000,100</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">2</th>
+                        <td>Straw Hat Grand Fleete</td>
+                        <td>B1,564,000,000</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">3</th>
+                        <td>Seven Warlords of the Sea</td>
+                        <td>B871,000,000</td>
+                    </tr>
+                </tbody>
+            </table>
+            
+            
+        </div>
+    
+        <div class="col-4 p-5">
+
+            <div class="card p-1" style="background-color: #6FDAFF;">
+
+                <div class="card-body">
+                    <Button id="events-list" class="col-12 card-title">
+                        Events 🚩 (click me to toggle)
+                    </Button>
+                </div>
+
+                <div id="hide-items">
+                    <div class="card bg-danger mb-2">
+                        <div class="embed-responsive embed-responsive-16by9">
+                            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/S8_YwFLCh4U?rel=0"
+                                allowfullscreen></iframe>
+                        </div>
+                        <div class="card-body">
+                            <h4 class="card-title">Stampede Official Trailer</h4>
+                            <p class="card-text"> <a href="https://www.youtube.com/watch?v=S8_YwFLCh4U"> Watch in youtube ◀ </a></p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+            
+
+        </div>
+    </div>
+   
+</div>
+
+
+
+<!-- Start Footer -->
+<footer>
+    <div class="container">
+        <div class="row text-light text-center py-4 justify-content-center">
+
+            <div class="col-sm-10 col-md-8 col-lg-6">
+                <img src="one-piece-logo-1.png">
+                <p>All content in this website in not mine</p>
+                <ul class="social pt-3">
+                    <li>
+                        <a href="https://www.facebook.com/onepieceofficial/">
+                            <i class="fa fa-facebook-square fa-2x"></i>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a
+                            href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwi9kPC9wq_wAhUaH3AKHY-6BIYQFjAAegQIAxAD&url=https%3A%2F%2Ftwitter.com%2Fonepieceanime%3Flang%3Den&usg=AOvVaw2GR10JY6VA4zGWckKVAcY8">
+                            <i class="fa fa-twitter-square fa-2x"></i>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="https://www.reddit.com/r/OnePiece/">
+                            <i class="fa fa-reddit-square fa-2x"></i>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="https://www.youtube.com/channel/UCdAHaWcKdpbT5XkN2Er6BUQ">
+                            <i class="fa fa-youtube-square fa-2x"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- End Footer -->
+
+
+<!-- Start Socket -->
+<div class="socket text-light text-center py-3 bg-dark">
+    <p>
+        &copy; <a href="" target="_blank">
+            Website made by Michael Jacob M. Delos Santos <br>
+            Grade 11 - Python
+        </a>
+    </p>
+</div>
+<!-- End Socket -->
+
+
+
+
+
+</body>
+</html>

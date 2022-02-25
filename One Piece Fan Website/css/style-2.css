@@ -1,0 +1,47 @@
+* {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+/*================ NAVIGATION BAR ================*/
+
+/*
+Tips:
+> !important = it overrides css properties of jquery. 
+
+*/
+
+/* Navigation Bar Brand */
+.navbar-brand img {
+    height: 3rem;
+}
+
+.navbar  {
+    font-size: 1.15rem;
+    font-weight: 600;
+    letter-spacing: .1rem;
+    box-shadow: 0rem 0.5rem 0.5rem rgba(0,0,0, 0.1);
+    background-color: rgba(0,0,0, 0.1);
+    z-index: 1;
+}
+
+/* navigation items & links */
+.nav-item {
+    padding: 0.5rem;
+}
+
+/* NavLink & Hover */
+.nav-link {
+    color: #5b5555!important;
+}
+
+.nav-link p {
+    height: 0.5rem;
+}
+
+.active {
+    color: #4981b3!important;
+}
+
+.nav-link.active,
+.nav-link p:hover{
+    color: #4981b3;
+}

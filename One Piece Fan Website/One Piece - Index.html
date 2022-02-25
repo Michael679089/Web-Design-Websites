@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta Charset -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    <!-- CSS Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Link to Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Script Jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Google Fonts: Monsterrat -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700&display=swap" rel="stylesheet">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <title>One Piece - Home</title>
+</head>
+
+<!-- Website Scripts -->
+<script> 
+    $(document).ready(function () {
+        // Start-up
+        $(".carousel").hide();
+        $(".carousel").fadeIn("slow");
+        
+        // Methods
+        $("#about-link").click(function(){
+            $("#first-page").fadeOut("slow");
+        });
+    });
+</script>
+
+<body>
+<!-- Navigation Bar -->
+<nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container">
+        <a href="" class="navbar-brand">
+            <img src="one-piece-logo-1.png" alt="one-piece-logo" title="one-piece-logo">
+        </a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+            <span class="navbar-toggler-icon">
+            </span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a href="One Piece - Index.html" class="active nav-link" id="home-link">
+                       <p>
+                           Home
+                        </p>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="One Piece - About.html" class="nav-link" id="about-link">
+                        <p>
+                            About
+                        </p>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="One Piece - Characters.html" class="nav-link" id="Characters-link">
+                        <p>
+                            Characters
+                        </p>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="One Piece - Cast.html" class="nav-link" id="home-link">
+                        <p>
+                            Cast
+                        </p>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="One Piece - Store.html" class="nav-link" id="home-link">
+                        <p>
+                            Store
+                        </p>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="One Piece - Contact Us.html" class="nav-link" id="home-link">
+                        <p>
+                            Contact Us
+                        </p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<!-- End Navigation -->
+
+<!-- 1st PAGE -->
+<div id="first-page">
+
+    <!-- Image Carousel -->
+    <div class="carousel slide" id="carousel" data-ride="carousel" data-interval="0">
+        <!-- Carousel Content -->
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="one-piece-banners/one-piece-banner-stampede-1.png" alt="" class="w-100">
+                <div class="carousel-caption">
+                    
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img id="picture-1" src="one-piece-banners/one-piece-banner-1.jpg" alt="" class="w-100">
+
+            </div>
+        </div>
+        <!-- End Carousel Content -->
+
+        <!-- Previous & Next Buttons -->
+        <a href="#carousel" class="carousel-control-prev" role="button" data-slide="prev">
+            <span class="fa fa-caret-left fa-2x"></span>
+            </span>
+        </a>
+
+        <a href="#carousel" class="carousel-control-next" role="button" data-slide="next">
+            <span class="fa fa-caret-right fa-2x"></span>
+            </span>
+        </a>
+        <!-- End Previous & Next Buttons -->
+
+
+    </div>
+    <!-- End Image Carousel -->
+
+    <!-- Main Page Heading -->
+    <div class="col-12 text-center mt-5">
+        <h1 class="text-dark pt-4">
+            Welcome to my One Piece Website
+        </h1>
+        <div class="border-bottom border-danger w-50 my-3 mx-auto">
+        </div>
+        <p class="lead">
+            I'll try to be spoiler free as possible.
+        </p>
+    </div>
+
+    <!-- Three Column Section -->
+    <div class="container">
+        <div class="row my-5">
+
+            <!-- First Column Card -->
+            <div class="col-lg-4">
+                <div class="card">
+                    <img class="card-img-top custom-size-1" src="CreatorOfOnePiece.jpg" alt="Creator Of One Piece Banner">
+                    <div class="card-body">
+                        <h4 class="card-title">
+                            Creator of One Piece.
+                        </h4>
+                        <p class="card-text">
+                            Learn about the process of the creator of One piece and how he creates his animes.
+                        </p>
+                        <a href="https://onepiece.fandom.com/wiki/Eiichiro_Oda" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Second Column Card -->
+            <div class="col-lg-4">
+                <div class="card">
+                    <img class="card-img-top custom-size-1" src="OnePieceDiscordIcon-V2.png" alt="Luffy Icon">
+                    <div class="card-body">
+                        <h4 class="card-title">
+                            Join the Community!
+                        </h4>
+                        <p class="card-text">
+                            Join the "r/OnePiece" Discord and get to learn more about One Piece with the Community!
+                        </p>
+                        <a href="https://discord.com/invite/0v8DbjF0mbNAuvlR" class="btn btn-primary">Join Now!</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Third Column Card -->
+            <div class="col-lg-4">
+                <div class="card">
+                    <img class="card-img-top custom-size-1" src="OnePieceTimeline-Thumbnail.jpg" alt="OnePieceTimeline Thumbnail">
+                    <div class="card-body">
+                        <h4 class="card-title">
+                            Keep Track of the Story
+                        </h4>
+                        <p class="card-text">
+                            A great storyline with diverse characters, can you keep up with it?
+                        </p>
+                        <br>
+                        <a href="https://onepiece.fandom.com/wiki/World_Timeline" class="btn btn-danger">read more</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End of Three Column Section -->
+    
+    <!-- Two Column Section -->
+    <div class="container my-5">
+
+        <div class="row py-4">
+            
+            <!-- image -->
+            <div class="col-lg-8 w-100">
+                <img src="one-piece-banners/one-piece-banner-stampede-1.png" alt="" class="w-100">
+            </div>
+    
+            <!-- Heading and Info -->
+            <div class="col-lg-4 mb-4 my-lg-auto">
+                <h1 class="text-dark font-weight-bold mb-3"> What's One Piece? </h1>
+                <p class="mb-4">
+                    One Piece is a Japanese manga series written and illustrated by Eiichiro Oda. It has been serialized in Shueisha's
+                    Weekly Shōnen Jump magazine since July 1997, with its individual chapters compiled into 98 tankōbon volumes as of
+                    February 2021.
+                </p>
+                <a href="One Piece - About.html" target="_blank" class="btn btn-outline-dark btn-lg">Read More</a>
+            </div>
+    
+        </div>
+
+        <hr>
+
+        <div class="row py-4">
+            
+            <!-- Heading and Info -->
+            <div class="col-lg-4 mb-4 my-lg-auto">
+                <h1 class="text-dark font-weight-bold mb-3"> Keep Track of the Story with the help of Wiki Fandom </h1>
+                <p class="mb-4">
+                    One Piece huge story is hard to keep track of. As of now, the anime has just covered only 60% of the story. Even for me
+                    I couldn't keep track of that, I started watching One Piece when I was 8 years old and then stopped when studying became
+                    an issue. I couldn't even remember the characters anymore. Luckily there's a fandom dedicated to this story. Check them
+                    out!
+                </p>
+                <a href="https://onepiece.fandom.com/wiki/World_Timeline" target="_blank" class="btn btn-outline-dark btn-lg">Read More</a>
+            </div>
+
+            
+            <!-- image -->
+            <div class="col-lg-8 w-100">
+                <img src="onepiece.jpg" alt="picture of wiki fandom" class="w-100">
+            </div>
+            
+        </div>
+
+    </div>
+    
+    <!-- Start Footer -->
+    <footer>
+        <div class="container">
+            <div class="row text-light text-center py-4 justify-content-center">
+    
+                <div class="col-sm-10 col-md-8 col-lg-6">
+                    <img src="one-piece-logo-1.png">
+                    <p>All content in this website in not mine</p>
+                    <ul class="social pt-3">
+                        <li>
+                            <a href="https://www.facebook.com/onepieceofficial/">
+                                <i class="fa fa-facebook-square fa-2x"></i>
+                            </a>
+                        </li>
+    
+                        <li>
+                            <a
+                                href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwi9kPC9wq_wAhUaH3AKHY-6BIYQFjAAegQIAxAD&url=https%3A%2F%2Ftwitter.com%2Fonepieceanime%3Flang%3Den&usg=AOvVaw2GR10JY6VA4zGWckKVAcY8">
+                                <i class="fa fa-twitter-square fa-2x"></i>
+                            </a>
+                        </li>
+    
+                        <li>
+                            <a href="https://www.reddit.com/r/OnePiece/">
+                                <i class="fa fa-reddit-square fa-2x"></i>
+                            </a>
+                        </li>
+    
+                        <li>
+                            <a href="https://www.youtube.com/channel/UCdAHaWcKdpbT5XkN2Er6BUQ">
+                                <i class="fa fa-youtube-square fa-2x"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- End Footer -->
+
+
+    <!-- Start Socket -->
+    <div class="socket text-light text-center py-3 bg-dark">
+        <p>
+            &copy; <a href="" target="_blank">
+                Website made by Michael Jacob M. Delos Santos <br>
+                Grade 11 - Python
+            </a>
+        </p>
+    </div>
+    <!-- End Socket -->
+</div>
+  
+</body>
+
+</html>

@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Meta Charset -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- CSS Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <!-- Local CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Script Jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Google Fonts: Monsterrat -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700&display=swap" rel="stylesheet">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <title>One Piece - Contact Us</title>
+</head>
+
+<style>
+     /*================ NAVIGATION BAR ================*/
+
+    /*
+    Tips:
+    > !important = it overrides css properties of jquery.
+    
+    */
+
+    /* Navigation Bar Brand */
+    .navbar-brand img {
+        height: 3rem;
+    }
+
+    .navbar {
+        font-size: 1.15rem;
+        font-weight: 600;
+        letter-spacing: .1rem;
+        box-shadow: 0rem 0.5rem 0.5rem rgba(0, 0, 0, 0.1);
+        background-color: rgba(0, 0, 0, 0.1);
+        z-index: 1;
+    }
+
+    /* navigation items & links */
+    .nav-item {
+        padding: 0.5rem;
+    }
+
+    /* NavLink & Hover */
+    .nav-link {
+        color: #5b5555 !important;
+    }
+
+    .nav-link p {
+        height: 0.5rem;
+    }
+
+    .active {
+        color: #4981b3 !important;
+    }
+
+    .nav-link.active,
+    .nav-link p:hover {
+        color: #4981b3;
+    }
+
+    /*================ Styling the Pixel Scroll ToBe Responsive ================*/
+    .image-2 {
+        background-position: center;
+        background-size: 50em 15em;
+        background-repeat: no-repeat;
+    }
+    @media only screen and (min-width: 1000px) {
+        .image-2 {
+            background-image: url('pngarea.com_old-paper-scroll-3698380.png');
+        }
+    }
+
+    @media only screen and (max-width: 1000px) {
+        .image-2 {
+            background-image: url('pngarea.com_old-paper-scroll-3698380.png');
+            background-size: 25em 7.5em;
+        }
+    }
+
+    /*================ Footer ================*/
+    footer {
+        background-color: #383838;
+        padding: 1rem 2rem 3rem;
+    }
+    footer img {
+        height: 3.5rem;
+        margin: 1.5rem auto;
+    }
+
+    footer p, footer a
+    .socket a {
+        color: white;
+        text-decoration: none;
+    }
+
+    ul.social {
+        list-style-type: none;
+        display: flex;
+        max-width: 16rem;
+        margin: 0 auto;
+        padding: 0;
+    }
+
+    ul.social li {
+        margin: 0 auto;
+    }
+
+    footer .svg-inline-fa {
+        color: #68a0d2;
+    }
+
+    /* SOCKET */
+    .socket {
+        background-color: #2222;
+        border-top: 0.1rem solid #4981b3;
+    }
+    
+    
+</style>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar bg-light navbar-light navbar-expand-lg">
+        <div class="container">
+            <a href="" class="navbar-brand">
+                <img src="one-piece-logo-1.png" alt="one-piece-logo" title="one-piece-logo">
+            </a>
+    
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+                <span class="navbar-toggler-icon">
+                </span>
+            </button>
+    
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a href="One Piece - Index.html" class="nav-link" id="home-link">
+                            <p>
+                                Home
+                            </p>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="One Piece - About.html" class="nav-link" id="about-link">
+                            <p>
+                                About
+                            </p>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="One Piece - Characters.html" class="nav-link" id="Characters-link">
+                            <p>
+                                Characters
+                            </p>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="One Piece - Cast.html" class="nav-link" id="home-link">
+                            <p>
+                                Cast
+                            </p>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="One Piece - Store.html" class="nav-link" id="home-link">
+                            <p>
+                                Store
+                            </p>
+                        </a>
+                    </li>
+                    <li class="nav-item active">
+                        <a href="One Piece - Contact Us.html" class="active nav-link" id="home-link">
+                            <p>
+                                Contact Us
+                            </p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- End Navigation -->
+
+    <!-- HEADINGS -->
+    <div class="jumbotron text-center">
+        <div class="image-2 py-lg-5">
+            <h1 class="p-5">Contact Us</h1>
+        </div>
+    </div>
+    <!-- End of Headings -->
+
+    <!-- CONTACT INFORMATION -->
+    <div class="container">
+        <div class="row">
+            <div class="col-8">
+                <h3>Creator of the website</h3>
+                <p class="lead">facebook: <a href=""> </a></p>
+                <p class="lead">school Email: michael.delossantos@ciit.edu.ph</p>
+
+                <!-- modify this form HTML and place wherever you want your form -->
+                
+                <div class="card p-5 m-1">
+                    <h4>Submit your comments to me</h4>
+                    <p class="text-muted">
+                        What do you want me to improve in my website? So far I haven't got any comments yet. 
+                        Please help me to improve in website designing and scripting.
+                    </p>
+                    <form action="https://formspree.io/f/xpzkqyna" method="POST">
+                        <label>
+                            Your email:
+                            <input type="email" name="_replyto">
+                        </label>
+                        <label>
+                            Your message:
+                            <textarea name="message"></textarea>
+                        </label>
+                        <br>
+                        <!-- your other form fields go here -->
+                    
+                        <button class="btn btn-primary" type="submit">Send</button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="col-4">
+                <div class="card">
+                    <div class="card-header">
+                        HELLO
+                    </div>
+                    <div class="card-body">
+                        <h4 class="card-title">My social media links:</h4>
+                        <ul class="pt-3">
+                            <li>
+                                <p>My facebook</p>
+                                <a href="https://www.facebook.com/onepieceofficial/">
+                                    <i class="fa fa-facebook-square fa-2x"></i>
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <p>My reddit</p>
+                                <a href="https://www.reddit.com/r/OnePiece/">
+                                    <i class="fa fa-reddit-square fa-2x"></i>
+                                </a>
+                            </li>
+                        
+                            <li>
+                                <p>My Youtube Channel</p>
+                                <a href="https://www.youtube.com/channel/UCd-IjLA58Xx_bFqQ46MBZPA">
+                                    <i class="fa fa-youtube-square fa-2x"></i>
+                                </a>
+                            </li>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+
+
+    <!-- Start Footer -->
+    <footer>
+        <div class="container">
+            <div class="row text-light text-center py-4 justify-content-center">
+    
+                <div class="col-sm-10 col-md-8 col-lg-6">
+                    <img src="one-piece-logo-1.png">
+                    <p>All content in this website in not mine</p>
+                    <ul class="social pt-3">
+                        <li>
+                            <a href="https://www.facebook.com/onepieceofficial/">
+                                <i class="fa fa-facebook-square fa-2x"></i>
+                            </a>
+                        </li>
+    
+                        <li>
+                            <a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwi9kPC9wq_wAhUaH3AKHY-6BIYQFjAAegQIAxAD&url=https%3A%2F%2Ftwitter.com%2Fonepieceanime%3Flang%3Den&usg=AOvVaw2GR10JY6VA4zGWckKVAcY8">
+                                <i class="fa fa-twitter-square fa-2x"></i>
+                            </a>
+                        </li>
+    
+                        <li>
+                            <a href="https://www.reddit.com/r/OnePiece/">
+                                <i class="fa fa-reddit-square fa-2x"></i>
+                            </a>
+                        </li>
+    
+                        <li>
+                            <a href="https://www.youtube.com/channel/UCdAHaWcKdpbT5XkN2Er6BUQ">
+                                <i class="fa fa-youtube-square fa-2x"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- End Footer -->
+    
+    <!-- Start Socket -->
+    <div class="socket text-light text-center py-3 bg-dark">
+        <p>
+            &copy; <a href="" target="_blank">
+                Website made by Michael Jacob M. Delos Santos <br>
+                Grade 11 - Python
+            </a>
+        </p>
+    </div>
+    <!-- End Socket -->
+
+
+
+</body>
+</html>

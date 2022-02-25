@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Meta Charset -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- CSS Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Script Jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Google Fonts: Monsterrat -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700&display=swap" rel="stylesheet">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <title>One Piece - Cast</title>
+</head>
+
+<style>
+    * {
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+    }
+
+    /*================ NAVIGATION BAR ================*/
+
+    /*
+    Tips:
+    > !important = it overrides css properties of jquery.
+    
+    */
+
+    /* Navigation Bar Brand */
+    .navbar-brand img {
+        height: 3rem;
+    }
+
+    .navbar {
+        font-size: 1.15rem;
+        font-weight: 600;
+        letter-spacing: .1rem;
+        box-shadow: 0rem 0.5rem 0.5rem rgba(0, 0, 0, 0.1);
+        background-color: rgba(0, 0, 0, 0.1);
+        z-index: 1;
+    }
+
+    /* navigation items & links */
+    .nav-item {
+        padding: 0.5rem;
+    }
+
+    /* NavLink & Hover */
+    .nav-link {
+        color: #5b5555 !important;
+    }
+
+    .nav-link p {
+        height: 0.5rem;
+    }
+
+    .active {
+        color: #4981b3 !important;
+    }
+
+    .nav-link.active,
+    .nav-link p:hover {
+        color: #4981b3;
+    }
+
+    /*================ IMAGE FLUID ================*/
+
+    .image {
+        background-image: url("one-piece-banners/one-piece-banner-stampede-1.png");
+        background-position: center;
+        background-size: cover;
+        position: relative;
+        height: 30em;
+    }
+
+    /* Text-Block & Text-Shadow */
+    #text-block {
+        position: absolute;
+        background-color: rgba(0, 0, 0, 0) !important;
+        bottom: 50px;
+        left: 20px;
+        padding-left: 20px;
+        padding-right: 20px;
+        border-radius: 0.2em;
+        text-shadow: 1px 2px 2px Black;
+    }
+
+    .text-shadow {
+        text-shadow: 2px 1px 2px Black;
+    }
+
+    .image-2 {
+        background-image: url('pngarea.com_old-paper-scroll-3698380.png');
+        background-position: center;
+        background-size: 50em 15em;
+        background-repeat: no-repeat;
+    }
+
+    .text-indent-1 p {
+        text-indent: 1em;
+    }
+
+    /*================ Footer ================*/
+    .myFooter {
+        background-color: #383838;
+        padding: 1rem 2rem 3rem;
+    }
+    .myFooter img {
+        height: 3.5rem;
+        margin: 1.5rem auto;
+    }
+
+    myFooter p, a
+    .ssocket a {
+        color: white;
+        text-decoration: none;
+    }
+
+    ul.social {
+        list-style-type: none;
+        display: flex;
+        max-width: 16rem;
+        margin: 0 auto;
+        padding: 0;
+    }
+
+    ul.social li {
+        margin: 0 auto;
+    }
+
+    footer .svg-inline-fa {
+        color: #68a0d2;
+    }
+
+    /* SOCKET */
+    .socket {
+        background-color: #2222;
+        border-top: 0.1rem solid #4981b3;
+    }
+
+</style>
+
+<!-- Website Scripts -->
+<script>
+    $(document).ready(function () {
+        // Start-up
+
+
+        // Methods
+        $("#btn-remove-card-body").click(function () {
+            $(".card-body").toggle("slow");
+        });
+
+    });
+</script>
+
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar bg-light navbar-light navbar-expand-lg">
+        <div class="container">
+            <a href="" class="navbar-brand">
+                <img src="one-piece-logo-1.png" alt="one-piece-logo" title="one-piece-logo">
+            </a>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+                <span class="navbar-toggler-icon">
+                </span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a href="One Piece - Index.html" class="nav-link" id="home-link">
+                            <p>
+                                Home
+                            </p>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="One Piece - About.html" class="nav-link" id="about-link">
+                            <p>
+                                About
+                            </p>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="One Piece - Characters.html" class="nav-link" id="Characters-link">
+                            <p>
+                                Characters
+                            </p>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="One Piece - Cast.html" class="nav-link active" id="home-link">
+                            <p>
+                                Cast
+                            </p>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="One Piece - Store.html" class="nav-link" id="home-link">
+                            <p>
+                                Store
+                            </p>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link" id="home-link">
+                            <p>
+                                Contact Us
+                            </p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+<!-- End Navigation -->
+
+<!-- HEADINGS -->
+<div class="jumbotron text-center py-5">
+    <div class="image-2 py-lg-5">
+        <h1 class="p-lg-5">The cast of One Piece</h1>
+    </div>
+</div>
+<!-- End of Headings -->
+
+<!-- The CAST -->
+<div class="row m-0">
+
+    <!-- Picture -->
+    <div class="col-lg-5">
+        <img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTP5vvhOmRrUTCgk_PJ-ti_HprlcFTVLtEBmnGwAx8Q9caQbuut" class="w-75 m-5">
+    </div>
+
+    <!-- Heading & Description -->
+    <div class="col-lg-7">
+        <h2>1. Mayumi Tanaka</h2>
+        <p class="text-muted mb-5">Played as: <i>Monkey D. Luffy</i></p>
+        <p class="lead">
+            Mayumi Tanaka (田中 真弓, Tanaka Mayumi, born Abe (阿部)) is a Japanese actress and narrator. She voiced Ryuunosuke Fujinami
+            in Urusei Yatsura, Koenma in Yu Yu Hakusho, Pazu in Laputa: Castle in the Sky, Monkey D. Luffy in One Piece, Kuririn,
+            Yajirobe and Uranai Baba in Dragon Ball, Kirimaru Settsuno in Nintama Rantarō, Kanna Kirishima in the Sakura Wars
+            series; the titular role of TwinBee in Konami's shoot-'em-up series TwinBee, and MegaMan Volnutt in the Mega Man Legends
+            series and related Capcom crossovers. She received the Kazue Takahashi Award at the 5th Seiyu Awards.[1]
+        </p>
+    </div>
+</div>
+
+
+
+<div class="row m-0">
+
+    <!-- Picture -->
+    <div class="col-lg-5">
+        <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQXplQs8ZsdBxwv2Ii794sUALbue7Ch0x4apUeaLKhI4_MJEETW"
+            class="w-75 m-5">
+    </div>
+
+    <!-- Heading & Description -->
+    <div class="col-lg-7">
+        <h2>2. Kazuya Nakai </h2>
+        <p class="text-muted mb-5">Played as: <i>Roronoa Zoro</i></p>
+        <p class="lead">
+            Kazuya Nakai (中井 和哉, Nakai Kazuya, born November 25, 1967) is a Japanese voice actor and narrator who was born in Kobe,
+            Japan. He is affiliated with Aoni Production. His most notable role is Roronoa Zoro from One Piece. Other major voice
+            roles include Toshiro Hijikata from Gintama, Date Masamune from Sengoku Basara, Xiahou Dun and Dian Wei from Dynasty
+            Warriors and Warriors Orochi series, Shinjiro Aragaki from the Persona series, Mugen from Samurai Champloo, Mondo Owada
+            from the Danganronpa series, Ultraman Max in Ultraman Max and Jin Sakai in the Japanese dub of the video game Ghost of
+            Tsushima. He won a Best Supporting Actor award at the 5th Seiyu Awards in 2011 for his roles in One Piece and Gin
+            Tama.[2]
+        </p>
+    </div>
+</div>
+
+
+
+<div class="row m-0">
+
+    <!-- Picture -->
+    <div class="col-lg-5">
+        <img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTlG0s-zglywn3bPl6rJKtycLwv25evpMs3ms6LJhXzoQcocXwS"
+            class="w-75 m-5">
+    </div>
+
+    <!-- Heading & Description -->
+    <div class="col-lg-7">
+        <h2>3. Akemi Okamura</h2>
+        <p class="text-muted mb-5">Played as: <i>Nami</i></p>
+        <p class="lead">
+            Akemi Okamura is a Japanese voice actress and narrator. She is affiliated with Mausu Promotion. She performed a song in
+            the NHK program Minna no Uta and currently voices Nami in One Piece.
+        </p>
+    </div>
+</div>
+
+
+
+<div class="row m-0">
+
+    <!-- Picture -->
+    <div class="col-lg-5">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/Kappei_Yamaguchi_by_Gage_Skidmore.jpg"
+            class="w-75 m-5">
+    </div>
+
+    <!-- Heading & Description -->
+    <div class="col-lg-7">
+        <h2>4. Kappei Yamaguchi </h2>
+        <p class="text-muted mb-5">Played as: <i>Usopp</i></p>
+        <p class="lead">
+            Mitsuo Yamaguchi (山口 光雄, Yamaguchi Mitsuo, born May 23, 1965), better known by the stage name of Kappei Yamaguchi (山口
+            勝平, Yamaguchi Kappei), is a Japanese actor and voice actor affiliated with Gokū[1] and 21st Century Fox.[2] He currently
+            voices Usopp in One Piece and Shinichi Kudo in Case Closed. Other roles included the male Ranma Saotome in Ranma ½, the
+            eponymous character in InuYasha and L in Death Note. In overseas dubs, he is the Japanese voice of Kyle Broflovski, Bugs
+            Bunny and Crash Bandicoot.he NHK program Minna no Uta and currently voices Nami in One Piece.
+        </p>
+    </div>
+</div>
+
+
+
+<div class="row m-0">
+
+    <!-- Picture -->
+    <div class="col-lg-5">
+        <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQOZXYVERxTVRG6q9MIDjl8qK0GQ1GiE69IpqYluOQ7CM8r3sfh"
+            class="w-75 m-5">
+    </div>
+
+    <!-- Heading & Description -->
+    <div class="col-lg-7">
+        <h2>5. Hiroaki Hirata </h2>
+        <p class="text-muted mb-5">Played as: <i>Vinsmoke Sanjii</i></p>
+        <p class="lead">
+            Hiroaki Hirata (平田 広明, Hirata Hiroaki, born August 7, 1963) is a Japanese actor, voice actor and narrator. He is the
+            founder of Hirata Production. 
+            <br>
+            He is known for voicing Vinsmoke Sanji in One Piece. His other known roles include Sha Gojyo in Saiyuki, Kotetsu T.
+            Kaburagi in Tiger & Bunny, Klein / Ryōtarō Tsuboi in Sword Art Online , Vergil in the Devil May Cry series, Mutta Nanba
+            in Space Brothers, Leomon in Digimon Adventure and Mr. Kondo in After the Rain. He is also the official Japanese
+            dub-over artist for Johnny Depp and Matt Damon. In addition, he dubbed many roles of Jude Law and Josh Hartnett.
+        </p>
+    </div>
+</div>
+
+
+
+<div class="row m-0">
+    
+    <!-- Picture -->
+    <div class="col-lg-5">
+        <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTqehFc5cmmTlya6dOKLTn2pWRpAM0kMeJM-Wy-lxKYWCLqq9Ka" class="w-75 m-5">
+    </div>
+
+    <!-- Heading & Description -->
+    <div class="col-lg-7">
+        <h2>6. Ikue Otani </h2>
+        <p class="text-muted mb-5">Played as: <i>Tonny Tonny Chopper</i></p>
+        <p class="lead">
+            Ikue Ōtani (大谷 育江, Ōtani Ikue, born August 18, 1965) is a Japanese actress, voice actress and narrator from
+            Tokyo,
+            Japan.[1] She is best known for her anime roles in the Pokémon series (as Pikachu), One Piece (as Tony Tony
+            Chopper),
+            Corpse Party (as Sachiko Shinozaki), Naruto (as Konohamaru Sarutobi), Detective Conan (as Mitsuhiko
+            Tsuburaya), Smile
+            PreCure! (as Candy), Uchi no Sanshimai (as Fu), Konjiki no Gash Bell (as Gash), and Persona 5 (as Morgana).
+            She is
+            currently attached to Mausu Promotion. Her pet name is "Iku-chan". She is known for playing both male and
+            female roles,
+            and sometimes plays multiple roles in one production. She is a native of Tokyo, but grew up in Niigata
+            Prefecture.
+        </p>
+    </div>
+</div>
+
+
+
+<div class="row m-0">
+
+    <!-- Picture -->
+    <div class="col-lg-5">
+        <img src="https://m.media-amazon.com/images/M/MV5BMjUwYWQ2NzMtYmYyNS00YzY5LTgyNTgtYjMyNDY3ODBlZjNmXkEyXkFqcGdeQXVyNDQxNjcxNQ@@._V1_.jpg" class="w-75 m-5">
+    </div>
+
+    <!-- Heading & Description -->
+    <div class="col-lg-7">
+        <h2>7. Kazue Ikura  </h2>
+        <p class="text-muted mb-5">Played as: <i>Tony Tony Chopper</i></p>
+        <p class="lead">
+            Kazue Ikura (伊倉 一恵, Ikura Kazue, born March 23, 1959) is a Japanese actress, voice actress and narrator who works for
+            Aoni Production. She was previously affiliated with theater groups/production companies 劇舎燐, 俳協, Production Baobab and
+            NABEYA.
+            <br>
+            She is most known for the roles of Kaori Makimura (City Hunter), Toraoh (Mashin Eiyuuden Wataru), Ryuunosuke Natsume
+            (All Purpose Cultural Cat Girl Nuku Nuku), and Leni Milchstrasse (Sakura Wars). Kazue Ikura has even taken her voice
+            acting skills on stage to perform, in costume, Leni Milchstrasse during several events starting in 1998 to the present.
+        </p>
+    </div>
+</div>
+
+
+<div class="row m-0">
+
+    <!-- Picture -->
+    <div class="col-lg-5">
+        <img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTjNOyvIHh3PPZiDlk8_jMWOivCAqV3WQjDzyiAKhRPek-7cApj"
+            class="w-75 m-5">
+    </div>
+
+    <!-- Heading & Description -->
+    <div class="col-lg-7">
+        <h2>8. Yutiko Yamaguchi </h2>
+        <p class="text-muted mb-5">Played as: <i>Nico Robin</i></p>
+        <p class="lead">
+            Yuriko Yamaguchi (山口 由里子, Yamaguchi Yuriko, born November 21, 1965) is a Japanese voice actress and narrator. She is
+            previously affiliated with Vi-Vo and is currently affiliated with Aoni Production. Her major roles include Ritsuko Akagi
+            in Neon Genesis Evangelion, Nico Robin in One Piece, Sonia in Eureka Seven and Nurse Joy in Pokémon.
+        </p>
+    </div>
+</div>
+
+
+
+<div class="row m-0">
+
+    <!-- Picture -->
+    <div class="col-lg-5">
+        <img src="https://cdn.myanimelist.net/images/voiceactors/2/34103.jpg"
+            class="w-75 m-5">
+    </div>
+
+    <!-- Heading & Description -->
+    <div class="col-lg-7">
+        <h2>9. Kazuki Yao </h2>
+        <p class="text-muted mb-5">Played as: <i>Franky</i></p>
+        <p class="lead">
+            Kazuki Yao (矢尾 一樹, Yao Kazuki, born June 17, 1959) is a Japanese voice actor, actor and narrator who is currently
+            affiliated with Max Mix. He is married to actress Natsuki Hayashi.
+        </p>
+    </div>
+</div>
+
+
+
+<div class="row m-0">
+
+    <!-- Picture -->
+    <div class="col-lg-5">
+        <img src="https://www.nautiljon.com/images/people/00/69/mini/yuichi_nagashima_18896.jpg?11544620016" class="w-75 m-5">
+    </div>
+
+    <!-- Heading & Description -->
+    <div class="col-lg-7">
+        <h2>10. Chō </h2>
+        <p class="text-muted mb-5">Played as: <i>Brook</i></p>
+        <p class="lead">
+            Chō (チョー, born Shigeru Nagashima (長島 茂, Nagashima Shigeru), December 15, 1957) is a Japanese actor, voice actor and
+            narrator from Kōnosu, Saitama. His former stage name was Yūichi Nagashima (長島 雄一, Nagashima Yūichi). He is a graduate of
+            the Nishogakusha University Department of Literature and received training at Bungakuza's research establishment and the
+            Seinenza Theater Company before attaching himself to Production Baobab in 1986. He transferred to the Tokyo Actor's
+            Consumer's Cooperative Society in 2007. On August 23, 2006, he changed his stage name to Chō after his character in
+            Tanken Boku no Machi.[1] His hobbies include badminton and jogging, and he is a licensed teacher in calligraphy.[2]
+        </p>
+    </div>
+</div>
+
+
+
+<div class="row m-0">
+
+    <!-- Picture -->
+    <div class="col-lg-5">
+        <img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSfBUmNZcgXNfgIA0jUqBLKGuQmW3qLWUbWA7VvuRqn92zWSUs1"
+            class="w-75 m-5">
+    </div>
+
+    <!-- Heading & Description -->
+    <div class="col-lg-7">
+        <h2>11. Katsuhisa Hōki </h2>
+        <p class="text-muted mb-5">Played as: <i>Jimbe</i></p>
+        <p class="lead">
+            Katsuhisa Hōki (宝亀克寿, Hōki Katsuhisa, born October 30, 1946) is a Japanese actor and voice actor from Nagasaki
+            Prefecture. He is affiliated with Aoni Production.[1] His real name is Katsuaki Hōki (箒克朗, Hōki Katsuaki). He is best
+            known for his roles in Transformers: Armada (as Smokescreen), Higurashi no Naku Koro ni (as Teppei Hōjō), and One Piece
+            (as Gekko Moriah and Jimbei).
+        </p>
+    </div>
+</div>
+
+
+
+<div class="row m-0">
+
+    <!-- Picture -->
+    <div class="col-lg-5">
+        <img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcStDIDFSDzdNU-29zHAclh8AVzS8OFX_gJRrhDAh9EamtyWCktZ"
+            class="w-75 m-5">
+    </div>
+
+    <!-- Heading & Description -->
+    <div class="col-lg-7">
+        <h2>12. Misa Watanabe </h2>
+        <p class="text-muted mb-5">Played as: <i>Nefetari Vivi</i></p>
+        <p class="lead">
+            Misa Watanabe (渡辺 美佐, Watanabe Misa, born April 30, 1964) is a Japanese voice actress and narrator from Tokyo, Japan.
+            She is well known for voicing Nefertari Vivi in One Piece.
+        </p>
+    </div>
+</div>
+<!-- End The Cast -->
+
+
+<!-- THE SOURCES -->
+<div class="card m-5">
+    <h4 class="card header">
+        Sources:
+    </h4>
+    <pre>
+    - https://en.wikipedia.org/wiki/Mayumi_Tanaka
+    - https://en.wikipedia.org/wiki/Kazuya_Nakai
+    - https://en.wikipedia.org/wiki/Akemi_Okamura
+    - https://en.wikipedia.org/wiki/Kappei_Yamaguchi
+    - https://en.wikipedia.org/wiki/Hiroaki_Hirata
+    - https://en.wikipedia.org/wiki/Ikue_%C5%8Ctani 
+    - https://en.wikipedia.org/wiki/Kazue_Ikura
+    - https://en.wikipedia.org/wiki/Yuriko_Yamaguchi_(voice_actress)
+    - https://en.wikipedia.org/wiki/Kazuki_Yao
+    - https://en.wikipedia.org/wiki/Ch%C5%8D
+    - https://en.wikipedia.org/wiki/Katsuhisa_H%C5%8Dki
+    - https://en.wikipedia.org/wiki/Misa_Watanabe
+    </pre>
+</div>
+<!-- End The Sources -->
+
+<!-- Start Footer -->
+<footer>
+    <div class="container">
+        <div class="row text-light text-center py-4 justify-content-center">
+
+            <div class="col-sm-10 col-md-8 col-lg-6">
+                <img src="one-piece-logo-1.png">
+                <p>All content in this website in not mine</p>
+                <ul class="social pt-3">
+                    <li>
+                        <a href="https://www.facebook.com/onepieceofficial/">
+                            <i class="fa fa-facebook-square fa-2x"></i>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a
+                            href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwi9kPC9wq_wAhUaH3AKHY-6BIYQFjAAegQIAxAD&url=https%3A%2F%2Ftwitter.com%2Fonepieceanime%3Flang%3Den&usg=AOvVaw2GR10JY6VA4zGWckKVAcY8">
+                            <i class="fa fa-twitter-square fa-2x"></i>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="https://www.reddit.com/r/OnePiece/">
+                            <i class="fa fa-reddit-square fa-2x"></i>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="https://www.youtube.com/channel/UCdAHaWcKdpbT5XkN2Er6BUQ">
+                            <i class="fa fa-youtube-square fa-2x"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- End Footer -->
+
+
+<!-- Start Socket -->
+<div class="socket text-light text-center py-3 bg-dark">
+    <p>
+        &copy; <a href="" target="_blank">
+            Website made by Michael Jacob M. Delos Santos <br>
+            Grade 11 - Python
+        </a>
+    </p>
+</div>
+<!-- End Socket -->
+
+
+
+
+</body>
