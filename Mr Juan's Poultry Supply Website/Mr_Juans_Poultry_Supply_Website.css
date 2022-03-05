@@ -1,0 +1,49 @@
+* {
+	font-family: Georgia;
+}
+
+/* Highlight colors*/
+::selection { 
+	background-color: red;
+	color: white;
+}
+
+/* navbar */
+.navbar a {
+	color: white;
+}
+
+.navbar a:hover {
+	transition: 1s;
+	color: red;
+	text-decoration: underline;
+}
+
+/* image icons */
+.img-icon {
+	width: 1em;
+	height: 1em;
+}
+
+/* Image Responsive */
+.img-grayscale {
+	width: 100%;
+	height: 100%;
+	filter: grayscale(100%);
+}
+
+/* header 1 */
+.header1 {
+	background-image: url("Chicken farm 1.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 100%;
+	padding: 10em;
+}
+
+img {
+	width: 100%;
+	height: auto;
+}
+
+
