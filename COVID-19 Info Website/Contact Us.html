@@ -50,7 +50,7 @@
 
         <!-- Sidebar -->
         <div
-            class="sidebar bg-blue-500 text-green-100 w-64 px-2 absolute inset-y-0 left-0 transform -translate-x-full md:relative md:translate-x-0 transition duration-200 ease-in-out">
+            class="sidebar bg-blue-500 text-green-100 min-w-fit w-64 px-2 absolute inset-y-0 left-0 transform -translate-x-full md:relative md:translate-x-0 transition duration-200 ease-in-out">
             <div class="top-0 space-y-6 py-7 sticky">
                 <!-- Logo -->
                 <a href="COVID-19 Info - Index.html" class="text-white flex items-center space-x-2 px-4">
@@ -59,7 +59,7 @@
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                             d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z" />
                     </svg>
-                    <span class="text-2xl font-extrabold">COVID-19 <p class="text-sm">Data</p></span>
+                    <span class="md:text-2xl font-extrabold">COVID-19 <p class="text-sm">Data</p></span>
                 </a>
 
                 <!-- Nav -->
@@ -74,58 +74,85 @@
 
         <!-- Content -->
         <div>
-            <div class="top-0 hidden md:block sticky">
-                <marquee width="100%" direction="left" class="hidden md:block bg-red-500 text-base relative text-white z-10" onmouseover="this.stop();" onmouseout="this.start();">
-                    DOH COVID-19 HOTLINE (02) 894-COVID | (02) 894-26843 FOR PLDT, SMART, SUN, AND TNT SUBSCRIBERS: 1555 EMERGENCY / 911 (FOR EMERGENCY RELATED CONCERNS) DIAL 911 / PUBLIC ASSISTANCE AND COMPLAINTS CENTER (FOR COMPLAINT, INQUIRES AND REQUEST FOR ASSISTANCE) TELEPHONE NUMBERS: (892) 50343 | (892) 51144 | 8888 | (0927) 422 6300 GLOBE | (0961) 384 9272 / DILG EMERGENCY OPERACTIONS CENTER (FOR CONTACT TRACING RELATED CONCERNS) TELEPHONE NUMBERS: 8876-3454 local 8881-8884 | SMART (0961) 756 1201 (0961) 756 1202 | GLOBE (0977) 714 9845 (0956) 186 7450 / RETURNING OVERSEAS FILIPINO WORKERS AND LOCALLY STRANDED INDIVIDUALS OPERATIONS DESK SMART (0961) 772 1661 | GLOBE (0995) 095 1745 / PEACE AND ORDER CONCERNS JOINT TASK FORCE CV SHIELD 0917 658 2495 | 0998 849 0013 | (02) 8725 3176 / SOCIAL AMELIORATION PRGRAM CONCERNS DSWD GLOBE 0916 247 1194 | SMART 0947 482 2864 |  SUN 0932 933 3251 | LANDLINE 16545 / TELIMED MANAGEMENT INC., AND MEDGATE HOTLINE (02) 8424-1724 / GLOBE TELEHEALTH INC. (KONSULTAMD) (02) 7798-8000 / NCMH CRISI HOTLINE 0917-899-USAP (8727) | (02) 899-USAP (8727)
-                </marquee>
-            </div>
-
-            <div class="p-10 bg-red-500 text-white">
-                <p>
-                    🤳 CALL THESE NUMBERS IF YOU ENCOUNTERED A SICK PERSON: 
-                </p>
-                <p>
-                    DOH COVID-19 HOTLINE (02) 894-COVID | (02) 894-26843 FOR PLDT, SMART, SUN, AND TNT SUBSCRIBERS: 1555 EMERGENCY / 911 (FOR EMERGENCY RELATED CONCERNS) DIAL 911 / PUBLIC ASSISTANCE AND COMPLAINTS CENTER (FOR COMPLAINT, INQUIRES AND REQUEST FOR ASSISTANCE) TELEPHONE NUMBERS: (892) 50343 | (892) 51144 | 8888 | (0927) 422 6300 GLOBE | (0961) 384 9272 / DILG EMERGENCY OPERACTIONS CENTER (FOR CONTACT TRACING RELATED CONCERNS) TELEPHONE NUMBERS: 8876-3454 local 8881-8884 | SMART (0961) 756 1201 (0961) 756 1202 | GLOBE (0977) 714 9845 (0956) 186 7450 / RETURNING OVERSEAS FILIPINO WORKERS AND LOCALLY STRANDED INDIVIDUALS OPERATIONS DESK SMART (0961) 772 1661 | GLOBE (0995) 095 1745 / PEACE AND ORDER CONCERNS JOINT TASK FORCE CV SHIELD 0917 658 2495 | 0998 849 0013 | (02) 8725 3176 / SOCIAL AMELIORATION PRGRAM CONCERNS DSWD GLOBE 0916 247 1194 | SMART 0947 482 2864 |  SUN 0932 933 3251 | LANDLINE 16545 / TELIMED MANAGEMENT INC., AND MEDGATE HOTLINE (02) 8424-1724 / GLOBE TELEHEALTH INC. (KONSULTAMD) (02) 7798-8000 / NCMH CRISI HOTLINE 0917-899-USAP (8727) | (02) 899-USAP (8727)
-                </p>
-            </div>
+            <marquee direction="left" class="w-full hidden md:block bg-red-500 text-lg fixed text-white" onmouseover="this.stop();" onmouseout="this.start();">
+                DOH COVID-19 HOTLINE (02) 894-COVID | (02) 894-26843 FOR PLDT, SMART, SUN, AND TNT SUBSCRIBERS: 1555 EMERGENCY / 911 (FOR EMERGENCY RELATED CONCERNS) DIAL 911 / PUBLIC ASSISTANCE AND COMPLAINTS CENTER (FOR COMPLAINT, INQUIRES AND REQUEST FOR ASSISTANCE) TELEPHONE NUMBERS: (892) 50343 | (892) 51144 | 8888 | (0927) 422 6300 GLOBE | (0961) 384 9272 / DILG EMERGENCY OPERACTIONS CENTER (FOR CONTACT TRACING RELATED CONCERNS) TELEPHONE NUMBERS: 8876-3454 local 8881-8884 | SMART (0961) 756 1201 (0961) 756 1202 | GLOBE (0977) 714 9845 (0956) 186 7450 / RETURNING OVERSEAS FILIPINO WORKERS AND LOCALLY STRANDED INDIVIDUALS OPERATIONS DESK SMART (0961) 772 1661 | GLOBE (0995) 095 1745 / PEACE AND ORDER CONCERNS JOINT TASK FORCE CV SHIELD 0917 658 2495 | 0998 849 0013 | (02) 8725 3176 / SOCIAL AMELIORATION PRGRAM CONCERNS DSWD GLOBE 0916 247 1194 | SMART 0947 482 2864 |  SUN 0932 933 3251 | LANDLINE 16545 / TELIMED MANAGEMENT INC., AND MEDGATE HOTLINE (02) 8424-1724 / GLOBE TELEHEALTH INC. (KONSULTAMD) (02) 7798-8000 / NCMH CRISI HOTLINE 0917-899-USAP (8727) | (02) 899-USAP (8727)
+            </marquee>
 
             <div class="flex-1 p-10">
-                <div class="space-y-5">
-                    <div>
-                        Talk to me through E-Mail or through my Social Media Accounts:
-                        <ul class="flex item-center space-x-4 py-2">
-                            <li>
-                                <a href="https://www.facebook.com/jacob.delossantos.927/" title="Michael's Facebook Account">
-                                    <i class="text-[3em] fa fa-facebook-square"></i> 
-                                </a>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+
+                    <div class=" break-words text-lg text-white bg-red-500 rounded">
+                        <div class="bg-red-500 space-y-2 rounded">
+                            <p class="p-2 bg-red-400 font-bold rounded-t"> 🤳 Call on these numbers if you have contacted with an infected person: </p>
+                        </div>
+                        <ol class="list-decimal list-inside space-y-2 py-2">
+                            <li class="break-words pl-5">
+                                DOH COVID-19 HOTLINE (02) 894-COVID (02) 894-26843 FOR PLDT, SMART, SUN, AND TNT SUBSCRIBERS: 1555 EMERGENCY / 911 (FOR EMERGENCY RELATED CONCERNS) DIAL 911 / PUBLIC ASSISTANCE AND COMPLAINTS CENTER (FOR COMPLAINT, INQUIRES AND REQUEST FOR ASSISTANCE)
                             </li>
-                            <li>
-                                <a href="https://www.reddit.com/user/Michael679089" title="Michael's Reddit Account">
-                                    <i class="text-[3em] fa fa-reddit"></i> 
-                                </a>
+                            <li class="break-words pl-5">
+                                TELEPHONE NUMBERS: (892) 50343 | (892) 51144 | 8888 | (0927) 422 6300 GLOBE | (0961) 384 9272
                             </li>
-                        </ul>
+                            <li class="break-words pl-5">
+                                DILG EMERGENCY OPERACTIONS CENTER (FOR CONTACT TRACING RELATED CONCERNS) TELEPHONE NUMBERS: 8876-3454 local 8881-8884 | SMART (0961) 756 1201 (0961) 756 1202 | GLOBE (0977) 714 9845 (0956) 186 7450
+                            </li>
+                            <li class="break-words pl-5">
+                                RETURNING OVERSEAS FILIPINO WORKERS AND LOCALLY STRANDED INDIVIDUALS OPERATIONS DESK SMART (0961) 772 1661 | GLOBE (0995) 095 1745
+                            </li>
+                            <li class="break-words pl-5">
+                                PEACE AND ORDER CONCERNS JOINT TASK FORCE CV SHIELD 0917 658 2495 | 0998 849 0013 | (02) 8725 3176
+                            </li>
+                            <li class="break-words pl-5">
+                                SOCIAL AMELIORATION PRGRAM CONCERNS DSWD GLOBE 0916 247 1194 | SMART 0947 482 2864 |  SUN 0932 933 3251 | LANDLINE 16545
+                            </li>
+                            <li class="break-words pl-5">
+                                TELIMED MANAGEMENT INC., AND MEDGATE HOTLINE (02) 8424-1724
+                            </li>
+                            <li class="break-words pl-5">
+                                GLOBE TELEHEALTH INC. (KONSULTAMD) (02) 7798-8000
+                            </li>
+                            <li class="break-words pl-5">
+                                NCMH CRISI HOTLINE 0917-899-USAP (8727) | (02) 899-USAP (8727)
+                            </li>
+                        </ol>
                     </div>
-                    <div class="bg-white max-w-3xl px-5 py-5 border border-blue-400 border-2 rounded-lg">
-                        <p class="text-blue-400 text-2xl font-bold">Send a Message! 📧</p>
-                        <p class="text-[0.7em] text-slate-300">This will send a message to my email.</p>
-                        <form action="https://formspree.io/f/mleznwlw" method="POST" class="py-1">
-                            <div class="space-y-1 mb-2">
-                                <p class="block">Your Email:</p>
-                                <input type="email" name="email" class="block w-full px-2 py-1 border border-gray-100 rounded-lg focus:outline-none focus:border-blue-400" required>
-                                <p class="block">Your Message:</p>
-                                <input type="message" name="message" class="block w-full px-2 py-1 border border-gray-100 rounded-lg focus:outline-none focus:border-blue-400" required> 
-                            </div>
-                            <button type="submit" name="submit" class="block w-full bg-blue-400 rounded">Send</button>
-                        </form> 
+                    
+                    <div class="space-y-5 ">
+                        <div>
+                            Talk to me through E-Mail or through my Social Media Accounts:
+                            <ul class="flex item-center space-x-4 py-2">
+                                <li>
+                                    <a href="https://www.facebook.com/jacob.delossantos.927/" title="Michael's Facebook Account">
+                                        <i class="text-[3em] fa fa-facebook-square"></i> 
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.reddit.com/user/Michael679089" title="Michael's Reddit Account">
+                                        <i class="text-[3em] fa fa-reddit"></i> 
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="bg-white max-w-3xl px-5 py-5 border border-blue-400 border-2 rounded-lg">
+                            <p class="text-blue-400 text-2xl font-bold">Send a Message! 📧</p>
+                            <p class="text-[0.7em] text-slate-300">This will send a message to my email.</p>
+                            <form action="https://formspree.io/f/mleznwlw" method="POST" class="py-1">
+                                <div class="space-y-1 mb-2">
+                                    <p class="block">Your Email:</p>
+                                    <input type="email" name="email" class="block w-full px-2 py-1 border border-gray-100 rounded-lg focus:outline-none focus:border-blue-400" required>
+                                    <p class="block">Your Message:</p>
+                                    <input type="message" name="message" class="block w-full px-2 py-1 border border-gray-100 rounded-lg focus:outline-none focus:border-blue-400" required> 
+                                </div>
+                                <button type="submit" name="submit" class="block w-full bg-blue-400 rounded">Send</button>
+                            </form> 
+                        </div>
                     </div>
+                    
                 </div>
             </div>
         </div>
     
     </div>
-    <!-- End of Content -->
-
+    <!-- End of Content --> 
     <!-- Footer -->
     <div class="w-full px-10 bg-blue-900">
         <div class="grid grid-cols-1 md:grid-cols-2 gap-x-10 gap-y-5 py-10 text-slate-200">
@@ -164,6 +191,7 @@
         </div>
     </div>
     <!-- End of Footer -->
+
 </body>
 
 </html>
