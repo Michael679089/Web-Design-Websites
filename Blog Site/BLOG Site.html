@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!-- BOOTSTRAP 5 -->
+    <!-- (Bootstrap CSS) -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="myStyle.css">
+    <link rel="stylesheet" href="Rainbow text animation css/text-rainbow.css">
+
+    <!-- (Bootstrap 5 poppers)  -->
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>
+    
+    <!-- GoogleApis Fonts Newsreader & Font Awesome -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Newsreader&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <!-- JQUERY -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- custom Jquery libraries -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <title>BLOG Site - Home </title>
+</head>
+
+<!-- Jquery -->
+<script>
+$(document).ready(function(){
+    //Start Up
+
+    // Methods
+    
+});
+
+$(document).ready(function() {
+    var movementStrength = 10;
+    var height = movementStrength / $(window).height();
+    var width = movementStrength / $(window).width();
+    $("#top-image").mousemove(function(e){
+        var pageX = e.pageX - ($(window).width() / 2);
+        var pageY = e.pageY - ($(window).height() / 2);
+        var newvalueX = width * pageX * -1 - 25;
+        var newvalueY = height * pageY * -1 - 50;
+        $('#top-image').css("background-position", newvalueX+"px     "+newvalueY+"px");
+    });
+});
+
+
+
+</script>
+
+<style>
+    .text-wavy {
+        text-decoration-line: underline;
+        text-decoration-style: wavy;
+        text-decoration-color: rgba(143, 189, 235,1);
+    }
+    .nav-item {
+        padding: 0em 1em;
+    }
+
+    .img-icon {
+        width: 8em;
+        height: 2em;
+    }
+
+    .img-icon-4 {
+        width: 24em;
+        height: 6em;
+    }
+
+    .navbar {
+        transition: 0.5s ease-in-out;
+    }
+
+    footer {
+        box-shadow: 0 50vh 0 50vh rgb(33,37,41);
+    }
+
+    #top-image {
+    background-position: -25px -50px;
+    }
+
+    .headline {
+        margin-top: 14em;
+    }
+
+    
+</style>
+
+<body>
+    <div id="top-image" class="container-fluid p-0 still-backgrounds-1">
+        <!-- NAVIGATION BAR -->
+        <div class="container-fluid p-0">
+            <nav class="navbar navbar-expand-xl navbar-light bg-light">
+                <div class="container-fluid text-center">
+                  <a class="navbar-brand" href="BLOG Site.html"> MJ & Jayme's <br> Blog Website</a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarBasic" aria-controls="navbarBasic" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarBasic">
+                    <ul class="navbar-nav me-auto mb-2 mb-xl-0">
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="BLOG Site.html">Home</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="BLOG Site - About Us.html">About Us</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="BLOG Site - Our Essays.html" tabindex="-1" aria-disabled="true">Our Essays</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+            </nav>
+        </div>
+        
+        <div class="container align-text-top text-center headline">
+            <h2 class="display-1">Welcome To Our <i class="text-rainbow-hover-black">Blog Site</i></h2>
+            <p>
+                A website that was created by us for our Quarterly Assessment 
+                projects in our subjects <b class="text-wavy"> Reading & Writing </b> and <b class="text-wavy"> Web Design & Scripting </b>
+            </p>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="main-footer">
+        <div class="container-fluid bg-dark text-light">
+            <div class="row p-5">
+                <div class="col-lg-6 col-sm-12">
+                    <h4>Group Members</h4>
+                    <p>
+                        Jayme Lenon - Writer
+                    </p>
+                    <p>
+                        Michael Jacob M. Delos Santos - Writer and Web Scripter & Designer
+                    </p>
+                </div>
+
+                <div class="col-lg-6 col-sm-12 ">
+                    <h4>Follow Us:</h4>
+                    <p>
+                        Michael's Social Accounts:
+                    </p>
+                    <ul class="list-unstyled d-inline-flex px-2">
+                        <li class="pr-2">
+                            <a href="https://www.facebook.com/jacob.delossantos.927/">
+                                <span class="fa fa-facebook-square fa-2x" title="Michael's Facebook"></span>
+                            </a>
+                        </li>
+                        <li class="px-2">
+                            <a href="https://www.youtube.com/channel/UCd-IjLA58Xx_bFqQ46MBZPA">
+                                <span class="fa fa-youtube-play fa-2x" title="Michael's YouTube"></span>
+                            </a>
+                        </li>
+                    </ul>
+
+                    <p>
+                        Jayme's Social Accounts:
+                    </p>
+
+                    <ul class="list-unstyled d-inline-flex px-2">
+                        <li class="pl-2">
+                            <a href="https://www.facebook.com/jaylen72">
+                                <span class="fa fa-facebook-square fa-2x" title="Michael's Facebook"></span>
+                            </a>
+                        </li>
+                    </ul>
+                    <br>
+                    
+                    <img id="top-image" class="img-icon-4" src="PNG/CIIT-Logo.png">
+                    
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Scripts -->
+    <script>
+		ScrollReveal().reveal('.headline');
+	</script>
+</body>
+</html>
